@@ -2,28 +2,16 @@ import { ReactNode } from "react";
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   Link,
   IconButton,
   Button,
-  Menu,
-  MenuButton,
-  MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
   useColorMode,
   useColorModeValue,
   Stack,
 } from "@chakra-ui/react";
-import {
-  HamburgerIcon,
-  CloseIcon,
-  AddIcon,
-  MoonIcon,
-  SunIcon,
-} from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 const Links = ["Inicio", "Proyectos", "Sobre mí", "Contacto"];
 

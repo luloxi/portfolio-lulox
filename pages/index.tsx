@@ -13,11 +13,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Container maxW="full" p={0}>
-        <NavBar />
-        <Hero />
-        <Footer />
-      </Container>
+      <Hero />
     </>
   );
 }
