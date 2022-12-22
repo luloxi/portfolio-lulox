@@ -8,12 +8,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Lulox Portfolio</title>
+        <title>Proyectos | Lulox Portfolio</title>
         <meta name="description" content="Full-stack Web3 developer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Hero />
+      <Container bg={"blue.400"} maxW="container.lg" minH="100vh">
+        Aca irian mis proyectos. Podrian tener un breve video introduciendolos
+        para que los reclutadores no tengan que entrar a ver como funciona todo
+      </Container>
     </>
   );
 }

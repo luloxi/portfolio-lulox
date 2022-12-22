@@ -43,11 +43,11 @@ export default function Hero() {
                 zIndex: -1,
               }}
             >
-              Conoceme,
+              Hola,
             </Text>
             <br />
             <Text as={"span"} color={"blue.400"}>
-              soy Luciano!
+              ¡soy Luciano!
             </Text>
           </Heading>
           <Text color={"gray.500"}>

@@ -7,7 +7,7 @@ import {
   useColorModeValue,
   VisuallyHidden,
 } from "@chakra-ui/react";
-import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import { ReactNode } from "react";
 
 const SocialButton = ({
@@ -28,6 +28,7 @@ const SocialButton = ({
       cursor={"pointer"}
       as={"a"}
       href={href}
+      target="_blank"
       display={"inline-flex"}
       alignItems={"center"}
       justifyContent={"center"}
@@ -47,7 +48,9 @@ export default function Footer() {
     <Box
       bg={useColorModeValue("gray.50", "gray.900")}
       color={useColorModeValue("gray.700", "gray.200")}
-      bottom={0}
+      position="fixed"
+      bottom="0"
+      width="100%"
     >
       <Container
         as={Stack}
@@ -61,14 +64,17 @@ export default function Footer() {
       >
         {/* <Text>© 2022 Chakra Templates. All rights reserved</Text> */}
         <Stack direction={"row"} spacing={6}>
-          <SocialButton label={"Twitter"} href={"#"}>
+          <SocialButton
+            label={"LinkedIn"}
+            href={"https://www.linkedin.com/in/lulox/"}
+          >
+            <FaLinkedin />
+          </SocialButton>
+          <SocialButton label={"GitHub"} href={"https://github.com/luloxi"}>
+            <FaGithub />
+          </SocialButton>
+          <SocialButton label={"Twitter"} href={"https://twitter.com/LuloxEth"}>
             <FaTwitter />
-          </SocialButton>
-          <SocialButton label={"YouTube"} href={"#"}>
-            <FaYoutube />
-          </SocialButton>
-          <SocialButton label={"Instagram"} href={"#"}>
-            <FaInstagram />
           </SocialButton>
         </Stack>
       </Container>

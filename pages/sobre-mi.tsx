@@ -8,12 +8,15 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Lulox Portfolio</title>
+        <title>Sobre mí | Lulox Portfolio</title>
         <meta name="description" content="Full-stack Web3 developer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Hero />
+      <Container bg={"orange.400"} maxW="container.lg" minH="100vh">
+        Acá iria información breve sobre mi, mis hobbies, intereses,
+        trayectoria, etc
+      </Container>
     </>
   );
 }
