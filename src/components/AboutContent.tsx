@@ -48,19 +48,8 @@ const features = [
 export default function AboutContent() {
   return (
     <Box p={4}>
-      {/* Heading */}
-      <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-        <Heading fontSize={"3xl"} mt={4}>
-          Soy Luciano Oliva Bianco
-        </Heading>
-        <Text color={useColorModeValue("gray.500", "gray.300")} fontSize={"xl"}>
-          Desarrollador web de aplicaciones decentralizadas y contratos
-          inteligentes.
-        </Text>
-      </Stack>
-
       {/* Sections */}
-      <Container maxW={"6xl"} mt={10}>
+      <Container maxW={"6xl"}>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
           {features.map((feature) => (
             <HStack key={feature.id} align={"top"}>

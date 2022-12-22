@@ -21,7 +21,8 @@ export default function Hero() {
       <Stack
         align={"center"}
         spacing={{ base: 8, md: 10 }}
-        py={{ base: 20, md: 24 }}
+        py={{ base: 6, md: 12 }}
+        marginBottom={6}
         direction={{ base: "column", md: "row" }}
       >
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>

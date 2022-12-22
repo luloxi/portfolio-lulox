@@ -7,7 +7,7 @@ export default function Layout({ children }: { children: any }) {
     <>
       <NavBar />
       <Container maxW="container.xl">{children}</Container>
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }
