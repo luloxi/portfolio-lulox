@@ -28,7 +28,7 @@ const NavLink = ({ children, href }: { children: ReactNode; href: string }) => (
     rounded={"md"}
     _hover={{
       textDecoration: "none",
-      bg: useColorModeValue("blue.200", "blue.700"),
+      bg: useColorModeValue("blue.100", "blue.700"),
     }}
     href={`${href}`}
   >
@@ -42,7 +42,7 @@ export default function NavBar() {
 
   return (
     <>
-      <Box bg={useColorModeValue("gray.100", "gray.900")} px={4}>
+      <Box bg={useColorModeValue("blue.200", "blue.800")} px={4}>
         <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
           {/* Button for mobile */}
           <IconButton

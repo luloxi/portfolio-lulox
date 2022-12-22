@@ -48,10 +48,10 @@ export default function Hero() {
             </Text>
             <br />
             <Text as={"span"} color={"blue.400"}>
-              ¡soy Luciano!
+              soy Luciano
             </Text>
           </Heading>
-          <Text color={"gray.500"}>
+          <Text color={useColorModeValue("gray.700", "gray.300")}>
             Me apasiona la programación, tecnología blockchain, y los gatos.
             <br /> Te invito a conocer sobre mis proyectos y otros datos sobre
             mí.
@@ -67,8 +67,8 @@ export default function Hero() {
                 fontWeight={"normal"}
                 px={6}
                 colorScheme={"red"}
-                bg={"blue.400"}
-                _hover={{ bg: "blue.500" }}
+                bg={"blue.500"}
+                _hover={{ bg: "blue.300" }}
               >
                 Mis proyectos
               </Button>
@@ -79,7 +79,9 @@ export default function Hero() {
                 size={"lg"}
                 fontWeight={"normal"}
                 px={6}
-
+                color={useColorModeValue("gray.700", "gray.300")}
+                bg={useColorModeValue("gray.300", "gray.700")}
+                _hover={{ bg: "gray.300" }}
                 //   leftIcon={<PlayIcon h={4} w={4} color={"gray.300"} />}
               >
                 Sobre mí
@@ -105,33 +107,22 @@ export default function Hero() {
           />
           <Box
             position={"relative"}
-            height={"300px"}
+            height={"400px"}
             rounded={"2xl"}
             boxShadow={"2xl"}
-            width={"full"}
+            // width={"full"}
             overflow={"hidden"}
+            display={"flex"}
+            justifyContent={"center"}
           >
-            <IconButton
-              aria-label={"Play Button"}
-              variant={"ghost"}
-              _hover={{ bg: "transparent" }}
-              icon={<PlayIcon w={12} h={12} />}
-              size={"lg"}
-              color={"white"}
-              position={"absolute"}
-              left={"50%"}
-              top={"50%"}
-              transform={"translateX(-50%) translateY(-50%)"}
-            />
             <Image
               alt={"Hero Image"}
               fit={"cover"}
+              rounded={"2xl"}
               align={"center"}
-              w={"100%"}
+              // w={"100%"}
               h={"100%"}
-              src={
-                "https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=800&q=80"
-              }
+              src={"/profile.jpg"}
             />
           </Box>
         </Flex>

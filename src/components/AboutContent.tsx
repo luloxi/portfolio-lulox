@@ -8,13 +8,14 @@ import {
   Stack,
   HStack,
   VStack,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import { CheckIcon } from "@chakra-ui/icons";
 
 const features = [
   {
     id: 1,
-    title: "Intereses laborales",
+    title: "Innovador",
     text: "Busco trabajar en proyectos relacionados con la decentalización y la privacidad online. Quiero ser parte de la vanguardia que implica la tecnología blockchain ",
   },
   {
@@ -24,7 +25,7 @@ const features = [
   },
   {
     id: 3,
-    title: "Proactivo",
+    title: "Flexible",
     text: "Disfruto de enseñar y colaborar con mis colegas, así como de resolver tareas complejas a solas o en equipo.",
   },
   {
@@ -49,8 +50,10 @@ export default function AboutContent() {
     <Box p={4}>
       {/* Heading */}
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
-        <Heading fontSize={"3xl"}>Soy Luciano Oliva Bianco</Heading>
-        <Text color={"gray.500"} fontSize={"xl"}>
+        <Heading fontSize={"3xl"} mt={4}>
+          Soy Luciano Oliva Bianco
+        </Heading>
+        <Text color={useColorModeValue("gray.500", "gray.300")} fontSize={"xl"}>
           Desarrollador web de aplicaciones decentralizadas y contratos
           inteligentes.
         </Text>

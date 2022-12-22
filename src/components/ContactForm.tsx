@@ -35,7 +35,7 @@ export default function ContactForm() {
           bg="gray.700"
           color="white"
           borderRadius="lg"
-          m={{ sm: 4, md: 2, lg: 2 }}
+          m={{ sm: 4, md: 2, lg: 8 }}
           p={{ sm: 5, md: 5, lg: 5 }}
         >
           <Box p={4}>
@@ -44,17 +44,30 @@ export default function ContactForm() {
                 <Box>
                   <Heading>Contacto</Heading>
                   <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
-                    Por dudas o propuestas,
-                    <br /> enviame un mensaje
+                    Por dudas o propuestas, enviame
+                    <br /> un mensaje
                   </Text>
                   {/* Lateral izquierdo con iconos e info */}
                   <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                     <VStack pl={0} spacing={3} alignItems="flex-start">
+                      <Link href="mailto:lucianoolivabianco@gmail.com">
+                        <Button
+                          size="md"
+                          height="48px"
+                          width="300px"
+                          variant="ghost"
+                          color="#DCE2FF"
+                          _hover={{ border: "2px solid #1C6FEB" }}
+                          leftIcon={<MdEmail color="#1970F1" size="20px" />}
+                        >
+                          lucianoolivabianco@gmail.com
+                        </Button>
+                      </Link>
                       <Link href="tel:+5491162959490">
                         <Button
                           size="md"
                           height="48px"
-                          width="200px"
+                          width="300px"
                           variant="ghost"
                           color="#DCE2FF"
                           _hover={{ border: "2px solid #1C6FEB" }}
@@ -63,21 +76,11 @@ export default function ContactForm() {
                           (+54 9 🇦🇷) 1162959490
                         </Button>
                       </Link>
+
                       <Button
                         size="md"
                         height="48px"
-                        width="200px"
-                        variant="ghost"
-                        color="#DCE2FF"
-                        _hover={{ border: "2px solid #1C6FEB" }}
-                        leftIcon={<MdEmail color="#1970F1" size="20px" />}
-                      >
-                        lucianoolivabianco@gmail.com
-                      </Button>
-                      <Button
-                        size="md"
-                        height="48px"
-                        width="200px"
+                        width="300px"
                         variant="ghost"
                         color="#DCE2FF"
                         _hover={{ border: "2px solid #1C6FEB" }}
