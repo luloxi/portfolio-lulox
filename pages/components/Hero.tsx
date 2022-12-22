@@ -9,6 +9,7 @@ import {
   Image,
   Icon,
   IconButton,
+  Link,
   createIcon,
   IconProps,
   useColorModeValue,
@@ -51,34 +52,39 @@ export default function Hero() {
             </Text>
           </Heading>
           <Text color={"gray.500"}>
-            Me apasiona la programación, la tecnología blockchain, y los gatos.
-            Mi curiosidad es inagotable, acompañame a conocer más.
+            Me apasiona la programación, tecnología blockchain, y los gatos.
+            <br /> Te invito a conocer sobre mis proyectos y otros datos sobre
+            mí.
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
             direction={{ base: "column", sm: "row" }}
           >
-            <Button
-              rounded={"full"}
-              size={"lg"}
-              fontWeight={"normal"}
-              px={6}
-              colorScheme={"red"}
-              bg={"blue.400"}
-              _hover={{ bg: "blue.500" }}
-            >
-              Mis proyectos
-            </Button>
-            <Button
-              rounded={"full"}
-              size={"lg"}
-              fontWeight={"normal"}
-              px={6}
+            <Link href="proyectos">
+              <Button
+                rounded={"full"}
+                size={"lg"}
+                fontWeight={"normal"}
+                px={6}
+                colorScheme={"red"}
+                bg={"blue.400"}
+                _hover={{ bg: "blue.500" }}
+              >
+                Mis proyectos
+              </Button>
+            </Link>
+            <Link href="sobre-mi">
+              <Button
+                rounded={"full"}
+                size={"lg"}
+                fontWeight={"normal"}
+                px={6}
 
-              //   leftIcon={<PlayIcon h={4} w={4} color={"gray.300"} />}
-            >
-              Sobre mí
-            </Button>
+                //   leftIcon={<PlayIcon h={4} w={4} color={"gray.300"} />}
+              >
+                Sobre mí
+              </Button>
+            </Link>
           </Stack>
         </Stack>
         <Flex

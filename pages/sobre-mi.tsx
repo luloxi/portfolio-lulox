@@ -1,8 +1,6 @@
 import Head from "next/head";
 import { Container } from "@chakra-ui/react";
-import NavBar from "./components/NavBar";
-import Hero from "./components/Hero";
-import Footer from "./components/Footer";
+import AboutContent from "./components/AboutContent";
 
 export default function Home() {
   return (
@@ -13,10 +11,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Container bg={"orange.400"} maxW="container.lg" minH="100vh">
-        Acá iria información breve sobre mi, mis hobbies, intereses,
-        trayectoria, etc
-      </Container>
+      <AboutContent />
     </>
   );
 }
