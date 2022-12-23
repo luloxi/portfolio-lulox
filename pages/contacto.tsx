@@ -1,6 +1,8 @@
 import Head from "next/head";
 import { Container } from "@chakra-ui/react";
 import ContactForm from "../src/components/ContactForm";
+import ContactTest from "../src/components/ContactTest.jsx";
+import Form from "../src/components/Form";
 
 export default function Home() {
   return (
@@ -11,7 +13,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <ContactForm />
+      {/* <ContactForm /> */}
+      {/* <ContactTest /> */}
+      <Form />
     </>
   );
 }

@@ -16,32 +16,32 @@ const features = [
   {
     id: 1,
     title: "Innovador",
-    text: "Busco trabajar en proyectos relacionados con la decentalización y la privacidad online. Quiero ser parte de la vanguardia que implica la tecnología blockchain ",
+    text: "Siempre busco ser parte de la vanguardia tecnológica, y encuentro eso en la tecnología blockchain.",
   },
   {
     id: 2,
     title: "Auto-didacta",
-    text: "Me encanta aprender por mi cuenta, y constantemente estoy investigando nuevas tecnologías.",
+    text: "Tengo facilidad para aprender por mis medios, y constantemente estoy investigando nuevas tecnologías.",
   },
   {
     id: 3,
     title: "Flexible",
-    text: "Disfruto de enseñar y colaborar con mis colegas, así como de resolver tareas complejas a solas o en equipo.",
+    text: "Disfruto de enseñar y colaborar con mis colegas, y tambien de resolver tareas complejas a solas.",
   },
   {
     id: 4,
     title: "Desarrollo web",
-    text: "Para el desarrollo de aplicaciones web utilizo React y Next.js, junto a herramientas como TailwindCSS y ChakraUI.",
+    text: "Utilizo React y Next.js, junto a las últimas herramientas del mercado como TailwindCSS y ChakraUI.",
   },
   {
     id: 5,
     title: "Smart contracts",
-    text: "Para el desarrollo de contratos inteligentes utilizo Solidity y Hardhat, lo cual me permite desarrollar para la mayoría de las blockchains.",
+    text: "Con Solidity y Hardhat puedo desarrollar contratos inteligentes para la mayoría de las blockchains.",
   },
   {
     id: 6,
     title: "JavaScript",
-    text: "Tengo preferencia por frameworks y librerías de JavaScript, ya que es mi lenguaje principal, pero estoy abierto a utilizar otros lenguajes.",
+    text: "Mi lenguaje principal, tanto para frontend como para backend, aunque estoy abierto a utilizar otros lenguajes.",
   },
 ];
 
@@ -52,13 +52,22 @@ export default function AboutContent() {
       <Container maxW={"6xl"}>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
           {features.map((feature) => (
-            <HStack key={feature.id} align={"top"}>
+            <HStack
+              key={feature.id}
+              align={"top"}
+              // border={"3px solid gray"}
+              borderRadius={24}
+              p={3}
+              _hover={{ bg: useColorModeValue("gray.300", "gray.700") }}
+            >
               <Box color={"green.400"} px={2}>
                 <Icon as={CheckIcon} />
               </Box>
               <VStack align={"start"}>
                 <Text fontWeight={600}>{feature.title}</Text>
-                <Text color={"gray.500"}>{feature.text}</Text>
+                <Text color={useColorModeValue("gray.700", "gray.300")}>
+                  {feature.text}
+                </Text>
               </VStack>
             </HStack>
           ))}

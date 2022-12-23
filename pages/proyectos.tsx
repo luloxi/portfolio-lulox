@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Container } from "@chakra-ui/react";
-import ProjectsContent from "../src/components/PojectsContent";
+import ProjectsContent from "../src/components/ProjectsContent";
 
 export default function Home() {
   return (

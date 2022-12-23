@@ -4,10 +4,8 @@ import {
   Box,
   Heading,
   Text,
-  IconButton,
   Button,
   VStack,
-  HStack,
   Link,
   Wrap,
   WrapItem,
@@ -18,16 +16,37 @@ import {
   InputLeftElement,
   Textarea,
 } from "@chakra-ui/react";
-import {
-  MdPhone,
-  MdEmail,
-  MdLocationOn,
-  MdFacebook,
-  MdOutlineEmail,
-} from "react-icons/md";
-import { BsGithub, BsDiscord, BsPerson } from "react-icons/bs";
+import { MdPhone, MdEmail, MdLocationOn, MdOutlineEmail } from "react-icons/md";
+import { BsPerson } from "react-icons/bs";
+// import { useRef } from "react";
+// import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
+  // const form = useRef("");
+
+  // const sendEmail = (e: any) => {
+  //   e.preventDefault();
+
+  //   // Make these into environment variables, don't push to GitHub
+  //   emailjs
+  //     .sendForm(
+  //       "service_apg37xq", // SERVICE_ID
+  //       "template_5ynpw4u", // TEMPLATE_ID
+  //       form.current,
+  //       "89m38kP3B8tfOnSbr" // PUBLIC KEY
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //         console.log("Message sent");
+  //         e.target.reset();
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  // };
+
   return (
     <Container maxW="full" mt={0} centerContent overflow="hidden">
       <Flex>
@@ -40,6 +59,7 @@ export default function ContactForm() {
         >
           <Box p={4}>
             <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
+              {/* Lateral con info de contacto */}
               <WrapItem>
                 <Box>
                   <Heading>Contacto</Heading>
@@ -92,10 +112,13 @@ export default function ContactForm() {
                   </Box>
                 </Box>
               </WrapItem>
+
+              {/* Formulario de contacto*/}
               <WrapItem>
                 <Box bg="white" borderRadius="lg">
                   <Box m={8} color="#0B0E3F">
                     <VStack spacing={5}>
+                      {/* NAME input */}
                       <FormControl id="name">
                         <FormLabel>Nombre</FormLabel>
                         <InputGroup borderColor="#E0E1E7">
@@ -106,8 +129,9 @@ export default function ContactForm() {
                           <Input type="text" size="md" />
                         </InputGroup>
                       </FormControl>
-                      <FormControl id="name">
-                        <FormLabel>Mail</FormLabel>
+                      {/* MAIL input */}
+                      <FormControl id="mail" isRequired>
+                        <FormLabel>E-mail</FormLabel>
                         <InputGroup borderColor="#E0E1E7">
                           <InputLeftElement
                             pointerEvents="none"
@@ -116,22 +140,27 @@ export default function ContactForm() {
                           <Input type="text" size="md" />
                         </InputGroup>
                       </FormControl>
-                      <FormControl id="name">
+                      {/* MESSAGE input */}
+                      <FormControl id="message" isRequired>
                         <FormLabel>Mensaje</FormLabel>
                         <Textarea
                           borderColor="gray.300"
                           _hover={{
                             borderRadius: "gray.300",
                           }}
-                          placeholder="message"
+                          placeholder="Escribi acá tu mensaje"
                         />
                       </FormControl>
-                      <FormControl id="name" float="right">
+                      {/* SEND button */}
+                      <FormControl id="submit" float="right">
                         <Button
+                          type="submit"
                           variant="solid"
-                          bg="#0D74FF"
+                          bg="blue.400"
                           color="white"
-                          _hover={{}}
+                          _hover={{ boxShadow: "md", bg: "blue.500" }}
+                          _active={{ boxShadow: "lg", bg: "blue.700" }}
+                          // onClick={sendEmail}
                         >
                           Enviar
                         </Button>
