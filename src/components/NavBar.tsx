@@ -2,16 +2,52 @@ import { ReactNode } from "react";
 import {
   Box,
   Flex,
+  chakra,
   HStack,
   Link,
   IconButton,
+  VisuallyHidden,
   Button,
   useDisclosure,
   useColorMode,
   useColorModeValue,
   Stack,
 } from "@chakra-ui/react";
+import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
+
+const SocialButton = ({
+  children,
+  label,
+  href,
+}: {
+  children: ReactNode;
+  label: string;
+  href: string;
+}) => {
+  return (
+    <chakra.button
+      bg={useColorModeValue("blackAlpha.100", "whiteAlpha.100")}
+      rounded={"full"}
+      w={8}
+      h={8}
+      cursor={"pointer"}
+      as={"a"}
+      href={href}
+      target="_blank"
+      display={"inline-flex"}
+      alignItems={"center"}
+      justifyContent={"center"}
+      transition={"background 0.3s ease"}
+      _hover={{
+        bg: useColorModeValue("blue.200", "blue.800"),
+      }}
+    >
+      <VisuallyHidden>{label}</VisuallyHidden>
+      {children}
+    </chakra.button>
+  );
+};
 
 // const Links = ["Inicio", "Proyectos", "Sobre mí", "Contacto"];
 const Links = [
@@ -67,6 +103,22 @@ export default function NavBar() {
                   {link.name}
                 </NavLink>
               ))}
+
+              <SocialButton
+                label={"LinkedIn"}
+                href={"https://www.linkedin.com/in/lulox/"}
+              >
+                <FaLinkedin />
+              </SocialButton>
+              <SocialButton label={"GitHub"} href={"https://github.com/luloxi"}>
+                <FaGithub />
+              </SocialButton>
+              <SocialButton
+                label={"Twitter"}
+                href={"https://twitter.com/LuloxEth"}
+              >
+                <FaTwitter />
+              </SocialButton>
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
@@ -84,6 +136,26 @@ export default function NavBar() {
                   {link.name}
                 </NavLink>
               ))}
+              <HStack justifyContent={"space-evenly"}>
+                <SocialButton
+                  label={"LinkedIn"}
+                  href={"https://www.linkedin.com/in/lulox/"}
+                >
+                  <FaLinkedin />
+                </SocialButton>
+                <SocialButton
+                  label={"GitHub"}
+                  href={"https://github.com/luloxi"}
+                >
+                  <FaGithub />
+                </SocialButton>
+                <SocialButton
+                  label={"Twitter"}
+                  href={"https://twitter.com/LuloxEth"}
+                >
+                  <FaTwitter />
+                </SocialButton>
+              </HStack>
             </Stack>
           </Box>
         ) : null}

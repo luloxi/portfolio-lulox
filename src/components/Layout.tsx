@@ -6,10 +6,9 @@ export default function Layout({ children }: { children: any }) {
   return (
     <>
       <NavBar />
-      <Container maxW="container.xl" mb="64px">
-        {children}
-      </Container>
-      <Footer />
+      {/* <Container maxW="container.xl" mb="64px"> */}
+      <Container maxW="container.xl">{children}</Container>
+      {/* <Footer /> */}
     </>
   );
 }

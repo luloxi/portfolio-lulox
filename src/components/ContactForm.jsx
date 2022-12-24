@@ -47,7 +47,7 @@ export default function ContactTest() {
   };
   return (
     <>
-      <Container maxW="full" mt={0} centerContent overflow="hidden">
+      <Container maxW="full" m={0} centerContent overflow="hidden">
         <Flex>
           <Box
             bg="gray.700"
