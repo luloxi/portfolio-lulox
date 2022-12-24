@@ -10,7 +10,7 @@ import {
 import Image from "next/image";
 import Link from "next/link";
 
-export default function blogPostWithImage() {
+export default function ProjectsContent() {
   return (
     <Box p={4}>
       {/* Heading */}
@@ -126,7 +126,7 @@ export default function blogPostWithImage() {
               <Text color={"gray.500"}>
                 dApp que permite desafiar a otros equipos y apostar en el
                 resultado de un encuentro deportivo. Fue presentado y
-                desarrollado para el hackathon de Think & Dev "King of Devs"
+                desarrollado para el hackathon de Think & Dev -King of Devs-
               </Text>
             </Stack>
           </Box>

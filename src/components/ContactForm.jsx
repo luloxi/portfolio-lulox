@@ -124,10 +124,9 @@ export default function ContactTest() {
                           <FormControl id="user_name">
                             <FormLabel>Nombre</FormLabel>
                             <InputGroup borderColor="#E0E1E7">
-                              <InputLeftElement
-                                pointerEvents="none"
-                                children={<BsPerson color="gray.800" />}
-                              />
+                              <InputLeftElement pointerEvents="none">
+                                <BsPerson color="gray.800" />
+                              </InputLeftElement>
                               <Input type="text" size="md" name="user_name" />
                             </InputGroup>
                           </FormControl>
@@ -135,10 +134,9 @@ export default function ContactTest() {
                           <FormControl id="user_email" isRequired>
                             <FormLabel>E-mail</FormLabel>
                             <InputGroup borderColor="#E0E1E7">
-                              <InputLeftElement
-                                pointerEvents="none"
-                                children={<MdOutlineEmail color="gray.800" />}
-                              />
+                              <InputLeftElement pointerEvents="none">
+                                <MdOutlineEmail color="gray.800" />
+                              </InputLeftElement>
                               <Input type="text" size="md" name="user_email" />
                             </InputGroup>
                           </FormControl>
@@ -181,10 +179,4 @@ export default function ContactTest() {
       </Container>
     </>
   );
-}
-
-export async function getStaticProps() {
-  const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID;
-  const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID;
-  const EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY;
 }

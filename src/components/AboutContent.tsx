@@ -46,6 +46,9 @@ const features = [
 ];
 
 export default function AboutContent() {
+  const textColor = useColorModeValue("gray.700", "gray.300");
+  const bgColor = useColorModeValue("gray.300", "gray.700");
+
   return (
     <Box p={4}>
       {/* Sections */}
@@ -58,16 +61,14 @@ export default function AboutContent() {
               // border={"3px solid gray"}
               borderRadius={24}
               p={3}
-              _hover={{ bg: useColorModeValue("gray.300", "gray.700") }}
+              _hover={{ bg: bgColor }}
             >
               <Box color={"green.400"} px={2}>
                 <Icon as={CheckIcon} />
               </Box>
               <VStack align={"start"}>
                 <Text fontWeight={600}>{feature.title}</Text>
-                <Text color={useColorModeValue("gray.700", "gray.300")}>
-                  {feature.text}
-                </Text>
+                <Text color={textColor}>{feature.text}</Text>
               </VStack>
             </HStack>
           ))}
