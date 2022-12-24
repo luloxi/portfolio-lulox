@@ -6,11 +6,17 @@ import {
   Text,
   Stack,
   useColorModeValue,
+  Flex,
+  SimpleGrid,
+  GridItem,
+  useBreakpointValue,
 } from "@chakra-ui/react";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function ProjectsContent() {
+  const colSpan = useBreakpointValue({ base: 2, md: 1 });
+
   return (
     <Box p={4}>
       {/* Heading */}
@@ -22,116 +28,125 @@ export default function ProjectsContent() {
 
       {/* Sections */}
 
-      <Center py={6}>
+      <SimpleGrid
+        columns={2}
+        columnGap={3}
+        rowGap={3}
+        w="full"
+        // border={"1px solid red"}
+        justifyItems={"center"}
+      >
         {/* First card */}
-        <Link
-          href="https://github.com/luloxi/ethernaut-with-hardhat"
-          target={"_blank"}
-        >
-          <Box
-            maxW={"445px"}
-            w={"full"}
-            bg={useColorModeValue("white", "gray.900")}
-            boxShadow={"2xl"}
-            m={4}
-            rounded={"md"}
-            p={6}
-            overflow={"hidden"}
+        <GridItem colSpan={colSpan}>
+          <Link
+            href="https://github.com/luloxi/ethernaut-with-hardhat"
+            target={"_blank"}
           >
             <Box
-              h={"230px"}
-              bg={"gray.100"}
-              mt={-6}
-              mx={-6}
-              mb={6}
-              pos={"relative"}
+              maxW={"445px"}
+              bg={useColorModeValue("white", "gray.900")}
+              boxShadow={"2xl"}
+              m={4}
+              rounded={"md"}
+              p={6}
+              overflow={"hidden"}
             >
-              <Image
-                alt="Ethernaut with Hardhat"
-                src={"/projects/ethernaut.png"}
-                layout={"fill"}
-              />
+              <Box
+                h={"230px"}
+                bg={"gray.100"}
+                mt={-6}
+                mx={-6}
+                mb={6}
+                pos={"relative"}
+              >
+                <Image
+                  alt="Ethernaut with Hardhat"
+                  src={"/projects/ethernaut.png"}
+                  layout={"fill"}
+                />
+              </Box>
+              <Stack>
+                <Text
+                  color={"green.500"}
+                  textTransform={"uppercase"}
+                  fontWeight={800}
+                  fontSize={"sm"}
+                  letterSpacing={1.1}
+                >
+                  Smart contracts
+                </Text>
+                <Heading
+                  color={useColorModeValue("gray.700", "white")}
+                  fontSize={"2xl"}
+                  fontFamily={"body"}
+                >
+                  Ethernaut con Hardhat
+                </Heading>
+                <Text color={"gray.500"}>
+                  Resolví una serie de desafíos de seguridad que imitan grandes
+                  hackeos en la historia de la blockchain utilizando Hardhat, un
+                  framework de desarrollo muy utilizado en la actualidad.
+                </Text>
+              </Stack>
             </Box>
-            <Stack>
-              <Text
-                color={"green.500"}
-                textTransform={"uppercase"}
-                fontWeight={800}
-                fontSize={"sm"}
-                letterSpacing={1.1}
-              >
-                Smart contracts
-              </Text>
-              <Heading
-                color={useColorModeValue("gray.700", "white")}
-                fontSize={"2xl"}
-                fontFamily={"body"}
-              >
-                Ethernaut con Hardhat
-              </Heading>
-              <Text color={"gray.500"}>
-                Resolví una serie de desafíos de seguridad que imitan grandes
-                hackeos en la historia de la blockchain utilizando Hardhat, un
-                framework de desarrollo muy utilizado en la actualidad.
-              </Text>
-            </Stack>
-          </Box>
-        </Link>
+          </Link>
+        </GridItem>
         {/* Second card */}
-        <Link
-          href="https://github.com/luloxi/sportsbook-dapp"
-          target={"_blank"}
-        >
-          <Box
-            maxW={"445px"}
-            w={"full"}
-            bg={useColorModeValue("white", "gray.900")}
-            boxShadow={"2xl"}
-            m={4}
-            rounded={"md"}
-            p={6}
-            overflow={"hidden"}
+        <GridItem colSpan={colSpan}>
+          <Link
+            href="https://github.com/luloxi/sportsbook-dapp"
+            target={"_blank"}
           >
             <Box
-              h={"240px"}
-              bg={"gray.100"}
-              mt={-6}
-              mx={-6}
-              mb={6}
-              pos={"relative"}
+              maxW={"445px"}
+              bg={useColorModeValue("white", "gray.900")}
+              boxShadow={"2xl"}
+              m={4}
+              rounded={"md"}
+              p={6}
+              overflow={"hidden"}
             >
-              <Image
-                alt="Sportsbook"
-                src={"/projects/landing.png"}
-                layout={"fill"}
-              />
+              <Box
+                h={"240px"}
+                bg={"gray.100"}
+                mt={-6}
+                mx={-6}
+                mb={6}
+                pos={"relative"}
+              >
+                <Image
+                  alt="Sportsbook"
+                  src={"/projects/landing.png"}
+                  layout={"fill"}
+                />
+              </Box>
+              <Stack>
+                <Text
+                  color={"green.500"}
+                  textTransform={"uppercase"}
+                  fontWeight={800}
+                  fontSize={"sm"}
+                  letterSpacing={1.1}
+                >
+                  dApps
+                </Text>
+                <Heading
+                  color={useColorModeValue("gray.700", "white")}
+                  fontSize={"2xl"}
+                  fontFamily={"body"}
+                >
+                  Sportsbook
+                </Heading>
+                <Text color={"gray.500"}>
+                  dApp que permite desafiar a otros equipos y apostar en el
+                  resultado de un encuentro deportivo. Fue presentado y
+                  desarrollado para el hackathon de Think & Dev -King of Devs-
+                </Text>
+              </Stack>
             </Box>
-            <Stack>
-              <Text
-                color={"green.500"}
-                textTransform={"uppercase"}
-                fontWeight={800}
-                fontSize={"sm"}
-                letterSpacing={1.1}
-              >
-                dApps
-              </Text>
-              <Heading
-                color={useColorModeValue("gray.700", "white")}
-                fontSize={"2xl"}
-                fontFamily={"body"}
-              >
-                Sportsbook
-              </Heading>
-              <Text color={"gray.500"}>
-                dApp que permite desafiar a otros equipos y apostar en el
-                resultado de un encuentro deportivo. Fue presentado y
-                desarrollado para el hackathon de Think & Dev -King of Devs-
-              </Text>
-            </Stack>
-          </Box>
-        </Link>
-      </Center>
+          </Link>
+        </GridItem>
+      </SimpleGrid>
     </Box>
   );
 }
