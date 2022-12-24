@@ -21,6 +21,7 @@ export default function Hero() {
         marginBottom={6}
         direction={{ base: "column", md: "row" }}
       >
+        border="1px solid red"
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
           {/* <Heading
             lineHeight={1.1}

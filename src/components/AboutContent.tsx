@@ -52,7 +52,7 @@ export default function AboutContent() {
   return (
     <Box p={4}>
       {/* Sections */}
-      <Container maxW={"6xl"}>
+      <Container maxW={"container.lg"}>
         <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
           {features.map((feature) => (
             <HStack
