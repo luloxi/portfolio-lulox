@@ -54,7 +54,7 @@ export default function ContactTest() {
   const SocialButton = ({ children, label, href }) => {
     return (
       <chakra.button
-        bg={useColorModeValue("blue.300", "blue.700")}
+        bg={"blue.700"}
         rounded={"full"}
         w={8}
         h={8}
@@ -66,9 +66,7 @@ export default function ContactTest() {
         alignItems={"center"}
         justifyContent={"center"}
         transition={"background 0.3s ease"}
-        _hover={{
-          bg: useColorModeValue("blue.200", "blue.800"),
-        }}
+        _hover={"blue.800"}
       >
         <VisuallyHidden>{label}</VisuallyHidden>
         {children}
