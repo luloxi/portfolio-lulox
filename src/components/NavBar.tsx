@@ -13,7 +13,7 @@ import {
   useColorModeValue,
   Stack,
 } from "@chakra-ui/react";
-import { FaLinkedin, FaTwitter, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope } from "react-icons/fa";
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 const SocialButton = ({
@@ -119,6 +119,12 @@ export default function NavBar() {
               >
                 <FaTwitter />
               </SocialButton>
+              <SocialButton
+                label={"Email"}
+                href={"mailto:lucianoolivabianco@gmail.com"}
+              >
+                <FaEnvelope />
+              </SocialButton>
             </HStack>
           </HStack>
           <Flex alignItems={"center"}>
@@ -154,6 +160,12 @@ export default function NavBar() {
                   href={"https://twitter.com/LuloxEth"}
                 >
                   <FaTwitter />
+                </SocialButton>
+                <SocialButton
+                  label={"Email"}
+                  href={"mailto:lucianoolivabianco@gmail.com"}
+                >
+                  <FaEnvelope />
                 </SocialButton>
               </HStack>
             </Stack>

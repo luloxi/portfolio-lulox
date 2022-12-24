@@ -4,10 +4,14 @@ import {
   Container,
   Flex,
   Box,
+  chakra,
+  useColorModeValue,
+  VisuallyHidden,
   Heading,
   Text,
   Button,
   VStack,
+  HStack,
   Link,
   Wrap,
   WrapItem,
@@ -20,6 +24,7 @@ import {
 } from "@chakra-ui/react";
 import { MdPhone, MdEmail, MdLocationOn, MdOutlineEmail } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
+import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function ContactTest() {
   const form = useRef(null);
@@ -44,6 +49,31 @@ export default function ContactTest() {
           console.log(error.text);
         }
       );
+  };
+
+  const SocialButton = ({ children, label, href }) => {
+    return (
+      <chakra.button
+        bg={useColorModeValue("blue.300", "blue.700")}
+        rounded={"full"}
+        w={8}
+        h={8}
+        cursor={"pointer"}
+        as={"a"}
+        href={href}
+        target="_blank"
+        display={"inline-flex"}
+        alignItems={"center"}
+        justifyContent={"center"}
+        transition={"background 0.3s ease"}
+        _hover={{
+          bg: useColorModeValue("blue.200", "blue.800"),
+        }}
+      >
+        <VisuallyHidden>{label}</VisuallyHidden>
+        {children}
+      </chakra.button>
+    );
   };
   return (
     <>
@@ -102,13 +132,34 @@ export default function ContactTest() {
                           width="300px"
                           variant="ghost"
                           color="#DCE2FF"
-                          _hover={{ border: "2px solid #1C6FEB" }}
+                          // _hover={{ border: "2px solid #1C6FEB" }}
                           leftIcon={
                             <MdLocationOn color="#1970F1" size="20px" />
                           }
                         >
                           Buenos Aires, Argentina
                         </Button>
+
+                        <HStack w="full" justifyContent={"space-evenly"}>
+                          <SocialButton
+                            label={"LinkedIn"}
+                            href={"https://www.linkedin.com/in/lulox/"}
+                          >
+                            <FaLinkedin />
+                          </SocialButton>
+                          <SocialButton
+                            label={"GitHub"}
+                            href={"https://github.com/luloxi"}
+                          >
+                            <FaGithub />
+                          </SocialButton>
+                          <SocialButton
+                            label={"Twitter"}
+                            href={"https://twitter.com/LuloxEth"}
+                          >
+                            <FaTwitter />
+                          </SocialButton>
+                        </HStack>
                       </VStack>
                     </Box>
                   </Box>
