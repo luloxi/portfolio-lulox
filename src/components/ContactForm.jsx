@@ -92,7 +92,7 @@ export default function ContactTest() {
                 <WrapItem>
                   <Box>
                     <Heading>Contacto</Heading>
-                    <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.500">
+                    <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.400">
                       Por dudas o propuestas, enviame
                       <br /> un mensaje
                     </Text>

@@ -51,8 +51,8 @@ export default function Hero() {
           <Text color={useColorModeValue("gray.700", "gray.300")}>
             Curiosidades sobre mi... ¡me encantan los gatos! Disfruto de hacer
             yoga, prefiero los ventiladores a los aires acondicionados, a veces
-            juego al ajedrez, y me encanta el jugo de naranja exprimido. Uso
-            Linux de forma nativa, y sé más de cripto que de actualidad.
+            juego al ajedrez, y me encanta el café de especialidad. Uso Linux de
+            forma nativa, y sé más de cripto que de actualidad.
           </Text>
           <Image
             alt={"Hero Image"}

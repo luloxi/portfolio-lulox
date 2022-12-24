@@ -2,11 +2,11 @@ import {
   Box,
   Container,
   Heading,
-  Center,
   Text,
   Stack,
   useColorModeValue,
-  Flex,
+  Button,
+  Center,
   SimpleGrid,
   GridItem,
   useBreakpointValue,
@@ -38,113 +38,141 @@ export default function ProjectsContent() {
       >
         {/* First card */}
         <GridItem colSpan={colSpan}>
-          <Link
-            href="https://github.com/luloxi/ethernaut-with-hardhat"
-            target={"_blank"}
+          <Box
+            maxW={"445px"}
+            _hover={{ bg: useColorModeValue("gray.100", "gray.800") }}
+            bg={useColorModeValue("white", "gray.900")}
+            boxShadow={"2xl"}
+            m={4}
+            rounded={"md"}
+            p={6}
+            overflow={"hidden"}
           >
             <Box
-              maxW={"445px"}
-              bg={useColorModeValue("white", "gray.900")}
-              boxShadow={"2xl"}
-              m={4}
-              rounded={"md"}
-              p={6}
-              overflow={"hidden"}
+              h={"230px"}
+              bg={"gray.100"}
+              mt={-6}
+              mx={-6}
+              mb={6}
+              pos={"relative"}
             >
-              <Box
-                h={"230px"}
-                bg={"gray.100"}
-                mt={-6}
-                mx={-6}
-                mb={6}
-                pos={"relative"}
-              >
-                <Image
-                  alt="Ethernaut with Hardhat"
-                  src={"/projects/ethernaut.png"}
-                  layout={"fill"}
-                />
-              </Box>
-              <Stack>
-                <Text
-                  color={"green.500"}
-                  textTransform={"uppercase"}
-                  fontWeight={800}
-                  fontSize={"sm"}
-                  letterSpacing={1.1}
-                >
-                  Smart contracts
-                </Text>
-                <Heading
-                  color={useColorModeValue("gray.700", "white")}
-                  fontSize={"2xl"}
-                  fontFamily={"body"}
-                >
-                  Ethernaut con Hardhat
-                </Heading>
-                <Text color={"gray.500"}>
-                  Resolví una serie de desafíos de seguridad que imitan grandes
-                  hackeos en la historia de la blockchain utilizando Hardhat, un
-                  framework de desarrollo muy utilizado en la actualidad.
-                </Text>
-              </Stack>
+              <Image
+                alt="Ethernaut with Hardhat"
+                src={"/projects/ethernaut.png"}
+                layout={"fill"}
+              />
             </Box>
-          </Link>
+            <Stack>
+              <Text
+                color={"green.500"}
+                textTransform={"uppercase"}
+                fontWeight={800}
+                fontSize={"sm"}
+                letterSpacing={1.1}
+              >
+                Smart contracts
+              </Text>
+              <Heading
+                color={useColorModeValue("gray.700", "white")}
+                fontSize={"2xl"}
+                fontFamily={"body"}
+              >
+                Ethernaut con Hardhat
+              </Heading>
+              <Text color={"gray.500"}>
+                Resolví una serie de desafíos de seguridad que imitan grandes
+                hackeos en la historia de la blockchain utilizando Hardhat, un
+                framework de desarrollo muy utilizado en la actualidad.
+              </Text>
+              <Center>
+                <Link
+                  href="https://github.com/luloxi/ethernaut-with-hardhat"
+                  target={"_blank"}
+                >
+                  <Button
+                    rounded={"full"}
+                    size={"lg"}
+                    fontWeight={"normal"}
+                    px={6}
+                    color={useColorModeValue("gray.800", "gray.100")}
+                    bg={useColorModeValue("blue.400", "blue.700")}
+                    _hover={{ bg: useColorModeValue("blue.300", "blue.600") }}
+                  >
+                    Ver en GitHub
+                  </Button>
+                </Link>
+              </Center>
+            </Stack>
+          </Box>
         </GridItem>
         {/* Second card */}
         <GridItem colSpan={colSpan}>
-          <Link
-            href="https://github.com/luloxi/sportsbook-dapp"
-            target={"_blank"}
+          <Box
+            maxW={"445px"}
+            bg={useColorModeValue("white", "gray.900")}
+            _hover={{ bg: useColorModeValue("gray.100", "gray.800") }}
+            boxShadow={"2xl"}
+            m={4}
+            rounded={"md"}
+            p={6}
+            overflow={"hidden"}
           >
             <Box
-              maxW={"445px"}
-              bg={useColorModeValue("white", "gray.900")}
-              boxShadow={"2xl"}
-              m={4}
-              rounded={"md"}
-              p={6}
-              overflow={"hidden"}
+              h={"240px"}
+              bg={"gray.100"}
+              mt={-6}
+              mx={-6}
+              mb={6}
+              pos={"relative"}
             >
-              <Box
-                h={"240px"}
-                bg={"gray.100"}
-                mt={-6}
-                mx={-6}
-                mb={6}
-                pos={"relative"}
-              >
-                <Image
-                  alt="Sportsbook"
-                  src={"/projects/landing.png"}
-                  layout={"fill"}
-                />
-              </Box>
-              <Stack>
-                <Text
-                  color={"green.500"}
-                  textTransform={"uppercase"}
-                  fontWeight={800}
-                  fontSize={"sm"}
-                  letterSpacing={1.1}
-                >
-                  dApps
-                </Text>
-                <Heading
-                  color={useColorModeValue("gray.700", "white")}
-                  fontSize={"2xl"}
-                  fontFamily={"body"}
-                >
-                  Sportsbook
-                </Heading>
-                <Text color={"gray.500"}>
-                  dApp que permite desafiar a otros equipos y apostar en el
-                  resultado de un encuentro deportivo. Fue presentado y
-                  desarrollado para el hackathon de Think & Dev -King of Devs-
-                </Text>
-              </Stack>
+              <Image
+                alt="Sportsbook"
+                src={"/projects/landing.png"}
+                layout={"fill"}
+              />
             </Box>
-          </Link>
+            <Stack>
+              <Text
+                color={"green.500"}
+                textTransform={"uppercase"}
+                fontWeight={800}
+                fontSize={"sm"}
+                letterSpacing={1.1}
+              >
+                dApps
+              </Text>
+              <Heading
+                color={useColorModeValue("gray.700", "white")}
+                fontSize={"2xl"}
+                fontFamily={"body"}
+              >
+                Sportsbook - EN DESARROLLO
+              </Heading>
+              <Text color={"gray.500"}>
+                dApp para contactar equipos con una red social, y coordinar un
+                encuentro con la opción de apostar en el resultado. Fue ganador
+                del hackathon de Think & Dev -King of Devs-
+              </Text>
+              <Center>
+                <Link
+                  href="https://github.com/luloxi/sportsbook-dapp"
+                  target={"_blank"}
+                >
+                  <Button
+                    rounded={"full"}
+                    size={"lg"}
+                    fontWeight={"normal"}
+                    px={6}
+                    color={useColorModeValue("gray.800", "gray.100")}
+                    bg={useColorModeValue("blue.400", "blue.700")}
+                    _hover={{ bg: useColorModeValue("blue.300", "blue.600") }}
+                  >
+                    Ver en GitHub
+                  </Button>
+                </Link>
+              </Center>
+            </Stack>
+          </Box>
         </GridItem>
       </SimpleGrid>
     </Box>
