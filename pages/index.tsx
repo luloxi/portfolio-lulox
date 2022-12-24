@@ -1,6 +1,6 @@
 import Head from "next/head";
 import AboutContent from "../src/components/AboutContent";
-import ContactForm from "../src/components/ContactForm";
+import ContactForm from "../src/components/ContactForm.jsx";
 import Hero from "../src/components/Hero";
 
 export default function Home() {
@@ -15,6 +15,7 @@ export default function Home() {
       <Hero />
       <AboutContent />
       <ContactForm />
+      {/* <ContactForm /> */}
     </>
   );
 }
