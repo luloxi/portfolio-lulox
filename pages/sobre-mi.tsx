@@ -7,6 +7,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import AboutContent from "../src/components/AboutContent";
+import AboutCats from "../src/components/AboutCats";
 
 export default function Home() {
   return (
@@ -34,6 +35,7 @@ export default function Home() {
         </Text>
       </Stack>
       <AboutContent />
+      <AboutCats />
     </>
   );
 }

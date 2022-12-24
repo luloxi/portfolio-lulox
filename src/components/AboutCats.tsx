@@ -22,7 +22,7 @@ export default function Hero() {
         direction={{ base: "column", md: "row" }}
       >
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
-          <Heading
+          {/* <Heading
             lineHeight={1.1}
             fontWeight={600}
             fontSize={{ base: "4xl", sm: "5xl", lg: "6xl" }}
@@ -47,14 +47,23 @@ export default function Hero() {
             <Text as={"span"} color={"blue.400"}>
               soy Luciano
             </Text>
-          </Heading>
+          </Heading> */}
           <Text color={useColorModeValue("gray.700", "gray.300")}>
-            Me apasiona la programación, la tecnología blockchain, y los gatos.
-            Actualmente busco trabajar con tecnologías web3.
-            <br /> Te invito a conocer sobre mis proyectos y otros datos sobre
-            mí.
+            Curiosidades sobre mi... ¡me encantan los gatos! Disfruto de hacer
+            yoga, prefiero los ventiladores a los aires acondicionados, a veces
+            juego al ajedrez, y me encanta el jugo de naranja exprimido. Uso
+            Linux de forma nativa, y sé más de cripto que de actualidad.
           </Text>
-          <Stack
+          <Image
+            alt={"Hero Image"}
+            fit={"cover"}
+            rounded={"2xl"}
+            align={"center"}
+            // w={"100%"}
+            h={"100%"}
+            src={"/about/horizontal.jpg"}
+          />
+          {/* <Stack
             spacing={{ base: 4, sm: 6 }}
             justifyContent={"center"}
             direction={{ base: "row", sm: "row" }}
@@ -85,7 +94,7 @@ export default function Hero() {
                 Sobre mí
               </Button>
             </Link>
-          </Stack>
+          </Stack> */}
         </Stack>
         <Flex
           flex={1}
@@ -111,7 +120,7 @@ export default function Hero() {
               align={"center"}
               // w={"100%"}
               h={"100%"}
-              src={"/profile.jpg"}
+              src={"/about/square.jpg"}
             />
           </Box>
         </Flex>

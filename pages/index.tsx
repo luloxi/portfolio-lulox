@@ -13,9 +13,8 @@ export default function Home() {
       </Head>
 
       <Hero />
-      <AboutContent />
+      {/* <AboutContent /> */}
       <ContactForm />
-      {/* <ContactForm /> */}
     </>
   );
 }
