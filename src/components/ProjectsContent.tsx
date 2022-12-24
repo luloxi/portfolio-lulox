@@ -47,7 +47,7 @@ export default function ProjectsContent() {
               pos={"relative"}
             >
               <Image
-                alt="Something"
+                alt="Ethernaut with Hardhat"
                 src={"/projects/ethernaut.png"}
                 layout={"fill"}
               />
@@ -101,7 +101,7 @@ export default function ProjectsContent() {
               pos={"relative"}
             >
               <Image
-                alt="Something"
+                alt="Sportsbook"
                 src={"/projects/landing.png"}
                 layout={"fill"}
               />
