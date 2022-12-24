@@ -53,7 +53,7 @@ export default function ContactTest() {
             bg="gray.700"
             color="white"
             borderRadius="lg"
-            m={{ sm: 4, md: 2, lg: 8 }}
+            m={{ sm: 4, md: 2, lg: 2, xl: 8 }}
             p={{ sm: 5, md: 5, lg: 5 }}
           >
             <Box p={4}>

@@ -69,9 +69,11 @@ export default function Hero() {
                 size={"lg"}
                 fontWeight={"normal"}
                 px={6}
-                colorScheme={"red"}
-                bg={"blue.500"}
-                _hover={{ bg: "blue.300" }}
+                color={useColorModeValue("gray.800", "gray.300")}
+                // color={"white"}
+                // colorScheme={"red"}
+                bg={useColorModeValue("blue.300", "blue.700")}
+                _hover={{ bg: useColorModeValue("blue.200", "blue.600") }}
               >
                 Mis proyectos
               </Button>
@@ -83,8 +85,8 @@ export default function Hero() {
                 fontWeight={"normal"}
                 px={6}
                 color={useColorModeValue("gray.700", "gray.300")}
-                bg={useColorModeValue("gray.300", "gray.700")}
-                _hover={{ bg: "gray.300" }}
+                bg={useColorModeValue("gray.400", "gray.700")}
+                _hover={{ bg: useColorModeValue("gray.300", "gray.600") }}
                 //   leftIcon={<PlayIcon h={4} w={4} color={"gray.300"} />}
               >
                 Sobre mí

@@ -46,8 +46,8 @@ const SocialButton = ({
 export default function Footer() {
   return (
     <Box
-      bg={useColorModeValue("gray.200", "gray.900")}
-      color={useColorModeValue("gray.700", "gray.200")}
+      bg={useColorModeValue("gray.300", "gray.900")}
+      color={useColorModeValue("gray.900", "gray.200")}
       position="fixed"
       left="0"
       right="0"
@@ -56,8 +56,9 @@ export default function Footer() {
       height="64px"
     >
       <Container
+        // border={"1px solid red"}
         as={Stack}
-        maxW={"6xl"}
+        maxW={"container.sm"}
         py={4}
         direction={{ base: "column", md: "row" }}
         spacing={4}
@@ -66,7 +67,13 @@ export default function Footer() {
         align={{ base: "center", md: "center" }}
       >
         {/* <Text>© 2022 Chakra Templates. All rights reserved</Text> */}
-        <Stack direction={"row"} spacing={6}>
+        <Stack
+          direction={"row"}
+          spacing={6}
+          w="full"
+          // border="1px solid blue"
+          justify={"space-evenly"}
+        >
           <SocialButton
             label={"LinkedIn"}
             href={"https://www.linkedin.com/in/lulox/"}
