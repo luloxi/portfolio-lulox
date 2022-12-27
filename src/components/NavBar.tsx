@@ -6,6 +6,7 @@ import {
   HStack,
   Link,
   IconButton,
+  Text,
   VisuallyHidden,
   Button,
   useDisclosure,
@@ -86,7 +87,18 @@ export default function NavBar() {
           {/* Button for mobile */}
           <IconButton
             size={"md"}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            icon={
+              isOpen ? (
+                <CloseIcon />
+              ) : (
+                <>
+                  <HStack px={4}>
+                    <HamburgerIcon />
+                    <Text>Menu</Text>
+                  </HStack>
+                </>
+              )
+            }
             aria-label={"Open Menu"}
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
