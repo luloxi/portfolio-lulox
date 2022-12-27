@@ -14,6 +14,7 @@ import {
   useColorModeValue,
   Stack,
 } from "@chakra-ui/react";
+import { GiHouse } from "react-icons/gi";
 import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope } from "react-icons/fa";
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 
@@ -50,7 +51,6 @@ const SocialButton = ({
   );
 };
 
-// const Links = ["Inicio", "Proyectos", "Sobre mí", "Contacto"];
 const Links = [
   { name: "Inicio", href: "/" },
   { name: "Proyectos", href: "proyectos" },
@@ -100,7 +100,7 @@ export default function NavBar() {
                 </>
               )
             }
-            aria-label={"Open Menu"}
+            aria-label={"Abrir menú"}
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
           />

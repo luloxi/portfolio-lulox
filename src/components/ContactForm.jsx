@@ -5,7 +5,6 @@ import {
   Flex,
   Box,
   chakra,
-  useColorModeValue,
   VisuallyHidden,
   Heading,
   Text,
@@ -26,7 +25,7 @@ import { MdPhone, MdEmail, MdLocationOn, MdOutlineEmail } from "react-icons/md";
 import { BsPerson } from "react-icons/bs";
 import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope } from "react-icons/fa";
 
-export default function ContactTest() {
+export default function ContactForm() {
   const form = useRef(null);
 
   const sendEmail = (e) => {
