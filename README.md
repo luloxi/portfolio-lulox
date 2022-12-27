@@ -1,4 +1,21 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Portfolio Website
+
+Made with love using Next.js, TypeScript and ChakraUI.
+
+## Pending changes
+
+### Visual
+
+- Add button to switch language (eng/esp)
+- [Add a timeline and programming languages section](https://dev.to/m_ahmad/create-professional-portfolio-website-with-nextjs-and-chakraui-4lkn)
+
+### Speed
+
+- Improve navigation style like [Next freeCodeCamp course](https://www.youtube.com/watch?v=KjY94sAKLlw)
+
+### Security
+
+- Make EmailJs variables private (is it possible? Or should I switch to a better mailing system?)
 
 ## Getting Started
 
@@ -10,10 +27,4 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Open [http://localhost:3000](http://localhost:3000) with your browser.
