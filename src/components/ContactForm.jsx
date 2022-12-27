@@ -130,7 +130,7 @@ export default function ContactTest() {
                           width="300px"
                           variant="ghost"
                           color="#DCE2FF"
-                          // _hover={{ border: "2px solid #1C6FEB" }}
+                          _hover={{ border: "2px solid #1C6FEB" }}
                           leftIcon={
                             <MdLocationOn color="#1970F1" size="20px" />
                           }
