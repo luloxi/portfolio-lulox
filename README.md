@@ -4,6 +4,10 @@ Made with love using Next.js, TypeScript and ChakraUI.
 
 ## Pending changes
 
+### General
+
+Take note of portfolios mentioned in [this video](https://www.youtube.com/watch?v=9eMp8l4WEpE) to make improvements to mine.
+
 ### Visual
 
 - Add button to switch language (eng/esp)
