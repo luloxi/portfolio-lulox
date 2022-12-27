@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import {
   Container,
@@ -27,6 +27,7 @@ import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function ContactForm() {
   const form = useRef(null);
+  const [mailSent, setMailSent] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -42,7 +43,8 @@ export default function ContactForm() {
         (result) => {
           console.log(result.text);
           console.log("Message sent");
-          e.target.reset();
+          // e.target.reset();
+          setMailSent(true);
         },
         (error) => {
           console.log(error.text);
@@ -164,61 +166,88 @@ export default function ContactForm() {
 
                 {/* Derecha con Formulario de contacto*/}
                 <WrapItem>
-                  <Box bg="white" borderRadius="lg">
-                    <Box m={8} color="#0B0E3F">
-                      <form ref={form} onSubmit={sendEmail}>
-                        <VStack spacing={5}>
-                          {/* NAME input */}
-                          <FormControl id="user_name">
-                            <FormLabel>Nombre</FormLabel>
-                            <InputGroup borderColor="#E0E1E7">
-                              <InputLeftElement pointerEvents="none">
-                                <BsPerson color="gray.800" />
-                              </InputLeftElement>
-                              <Input type="text" size="md" name="user_name" />
-                            </InputGroup>
-                          </FormControl>
-                          {/* MAIL input */}
-                          <FormControl id="user_email" isRequired>
-                            <FormLabel>E-mail</FormLabel>
-                            <InputGroup borderColor="#E0E1E7">
-                              <InputLeftElement pointerEvents="none">
-                                <MdOutlineEmail color="gray.800" />
-                              </InputLeftElement>
-                              <Input type="text" size="md" name="user_email" />
-                            </InputGroup>
-                          </FormControl>
-                          {/* MESSAGE input */}
-                          <FormControl id="message" isRequired>
-                            <FormLabel>Mensaje</FormLabel>
-                            <Textarea
-                              borderColor="gray.300"
-                              _hover={{
-                                borderRadius: "gray.300",
-                              }}
-                              placeholder="Escribi acá tu mensaje"
-                              name="message"
-                            />
-                          </FormControl>
-                          {/* SEND button */}
-                          <FormControl id="submit" float="right">
-                            <Button
-                              type="submit"
-                              variant="solid"
-                              bg="blue.400"
-                              color="white"
-                              _hover={{ boxShadow: "md", bg: "blue.500" }}
-                              _active={{ boxShadow: "lg", bg: "blue.700" }}
-                              // value="Send"
-                              // onClick={sendEmail}
-                            >
-                              Enviar
-                            </Button>
-                          </FormControl>
-                        </VStack>
-                      </form>
-                    </Box>
-                  </Box>
+                  {mailSent ? (
+                    <>
+                      <Box
+                        bg="green.300"
+                        alignItems={"center"}
+                        borderRadius="lg"
+                      >
+                        <Box m={8} color="#0B0E3F">
+                          <Text>
+                            ¡Tu mensaje fue enviado exitosamente!
+                            <br />
+                          </Text>
+                        </Box>
+                      </Box>
+                    </>
+                  ) : (
+                    <>
+                      <Box bg="white" borderRadius="lg">
+                        <Box m={8} color="#0B0E3F">
+                          <form ref={form} onSubmit={sendEmail}>
+                            <VStack spacing={5}>
+                              {/* NAME input */}
+                              <FormControl id="user_name">
+                                <FormLabel>Nombre</FormLabel>
+                                <InputGroup borderColor="#E0E1E7">
+                                  <InputLeftElement pointerEvents="none">
+                                    <BsPerson color="gray.800" />
+                                  </InputLeftElement>
+                                  <Input
+                                    type="text"
+                                    size="md"
+                                    name="user_name"
+                                  />
+                                </InputGroup>
+                              </FormControl>
+                              {/* MAIL input */}
+                              <FormControl id="user_email" isRequired>
+                                <FormLabel>E-mail</FormLabel>
+                                <InputGroup borderColor="#E0E1E7">
+                                  <InputLeftElement pointerEvents="none">
+                                    <MdOutlineEmail color="gray.800" />
+                                  </InputLeftElement>
+                                  <Input
+                                    type="text"
+                                    size="md"
+                                    name="user_email"
+                                  />
+                                </InputGroup>
+                              </FormControl>
+                              {/* MESSAGE input */}
+                              <FormControl id="message" isRequired>
+                                <FormLabel>Mensaje</FormLabel>
+                                <Textarea
+                                  borderColor="gray.300"
+                                  _hover={{
+                                    borderRadius: "gray.300",
+                                  }}
+                                  placeholder="Escribi acá tu mensaje"
+                                  name="message"
+                                />
+                              </FormControl>
+                              {/* SEND button */}
+                              <FormControl id="submit" float="right">
+                                <Button
+                                  type="submit"
+                                  variant="solid"
+                                  bg="blue.400"
+                                  color="white"
+                                  _hover={{ boxShadow: "md", bg: "blue.500" }}
+                                  _active={{ boxShadow: "lg", bg: "blue.700" }}
+                                  // value="Send"
+                                  // onClick={sendEmail}
+                                >
+                                  Enviar
+                                </Button>
+                              </FormControl>
+                            </VStack>
+                          </form>
+                        </Box>
+                      </Box>
+                    </>
+                  )}
                 </WrapItem>
               </Wrap>
             </Box>
