@@ -1,11 +1,9 @@
 import {
   Box,
   Container,
-  Heading,
   SimpleGrid,
   Icon,
   Text,
-  Stack,
   HStack,
   VStack,
   useColorModeValue,

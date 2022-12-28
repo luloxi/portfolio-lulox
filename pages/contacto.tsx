@@ -1,8 +1,7 @@
 import Head from "next/head";
 import ContactForm from "../src/components/ContactForm.jsx";
-import { Box, Container } from "@chakra-ui/react";
 
-export default function Home() {
+export default function Contact() {
   return (
     <>
       <Head>
@@ -11,11 +10,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      {/* <Box p={4}> */}
-
       <ContactForm />
-
-      {/* </Box> */}
     </>
   );
 }
