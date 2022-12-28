@@ -13,10 +13,6 @@ Take note of portfolios mentioned in [this video](https://www.youtube.com/watch?
 - Add button to switch language (eng/esp)
 - [Add a timeline and programming languages section](https://dev.to/m_ahmad/create-professional-portfolio-website-with-nextjs-and-chakraui-4lkn)
 
-### Speed
-
-- Improve navigation style like [Next freeCodeCamp course](https://www.youtube.com/watch?v=KjY94sAKLlw)
-
 ### Security
 
 - Make EmailJs variables private (is it possible? Or should I switch to a better mailing system?)

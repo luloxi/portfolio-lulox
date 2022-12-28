@@ -7,9 +7,10 @@ import {
   Text,
   Button,
   Image,
-  Link,
+  // Link,
   useColorModeValue,
 } from "@chakra-ui/react";
+import Link from "next/link";
 
 export default function Hero() {
   return (

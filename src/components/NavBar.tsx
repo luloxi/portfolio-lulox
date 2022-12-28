@@ -4,7 +4,7 @@ import {
   Flex,
   chakra,
   HStack,
-  Link,
+  // Link,
   IconButton,
   Text,
   VisuallyHidden,
@@ -14,7 +14,7 @@ import {
   useColorModeValue,
   Stack,
 } from "@chakra-ui/react";
-import { GiHouse } from "react-icons/gi";
+import Link from "next/link";
 import { FaLinkedin, FaTwitter, FaGithub, FaEnvelope } from "react-icons/fa";
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 
@@ -59,21 +59,22 @@ const Links = [
 ];
 
 const NavLink = ({ children, href }: { children: ReactNode; href: string }) => (
-  <Link
-    px={4}
-    py={2}
-    rounded={"md"}
-    bg={useColorModeValue("blue.300", "blue.700")}
-    color={useColorModeValue("gray.800", "gray.200")}
-    textAlign={"center"}
-    fontWeight={"600"}
-    _hover={{
-      textDecoration: "none",
-      bg: useColorModeValue("blue.100", "blue.500"),
-    }}
-    href={`${href}`}
-  >
-    {children}
+  <Link href={`${href}`}>
+    <Box
+      px={4}
+      py={2}
+      rounded={"md"}
+      bg={useColorModeValue("blue.300", "blue.700")}
+      textAlign={"center"}
+      color={useColorModeValue("gray.800", "gray.200")}
+      fontWeight={"600"}
+      _hover={{
+        textDecoration: "none",
+        bg: useColorModeValue("blue.100", "blue.500"),
+      }}
+    >
+      {children}
+    </Box>
   </Link>
 );
 
