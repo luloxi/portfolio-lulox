@@ -6,7 +6,8 @@ Made with love using Next.js, TypeScript and ChakraUI.
 
 ### General
 
-Take note of portfolios mentioned in [this video](https://www.youtube.com/watch?v=9eMp8l4WEpE) to make improvements to mine.
+- Take note of portfolios mentioned in [this video](https://www.youtube.com/watch?v=9eMp8l4WEpE) to make improvements to mine.
+- View [this junior portfolio](https://winter-art-7889.on.fleek.co/) and use as reference [(GitHub here)](https://github.com/jdhorth/web3-portfolio)
 
 ### Visual
 
