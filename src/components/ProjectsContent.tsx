@@ -151,9 +151,10 @@ export default function ProjectsContent() {
               <Text color={"gray.500"}>
                 Social dApp for connecting local teams of a given sport, that
                 allows betting on the outcome of a match, paying for location of
-                a match, and collecting NFTs on the result of past matches.{" "}
+                a match, and collecting NFTs on the result of past matches.
                 <strong>
-                  1st place winner of the Think & Dev hackathon "King of Devs"
+                  1st place winner of the Think & Dev hackathon &quot;King of
+                  Devs&quot;
                 </strong>
               </Text>
               <Center>

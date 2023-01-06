@@ -16,7 +16,7 @@ export default function Home() {
         <title>About me | Lulox Portfolio</title>
         <meta
           name="description"
-          content="About me, Luciano Oliva Bianco, Full-stack Web3 developer"
+          content="Hey there, I'm a Full-stack Web3 developer"
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -34,7 +34,7 @@ export default function Home() {
           fontSize={"3xl"}
           mt={4}
         >
-          I'm Luciano Oliva Bianco
+          I&apos;m Luciano Oliva Bianco
         </Heading>
         <Text color={useColorModeValue("gray.500", "gray.300")} fontSize={"xl"}>
           Fullstack web developer, blockchain & web3 oriented

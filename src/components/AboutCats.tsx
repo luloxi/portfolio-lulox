@@ -30,8 +30,8 @@ export default function AboutCats() {
           >
             And... I love cats! I enjoy practicing yoga, I prefer fans over air
             conditioners, sometimes I play chess, and I love a good coffee.
-            Native Linux user, and I'm more informed on crypto than on world
-            news.
+            Native Linux user, and I&apos;m more informed on crypto than on
+            world news.
           </Text>
           <Image
             alt={"Hero Image"}

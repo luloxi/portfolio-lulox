@@ -56,6 +56,7 @@ const features = [
 ];
 
 export default function AboutContent() {
+  const titleColor = useColorModeValue("blue.500", "blue.300");
   const textColor = useColorModeValue("gray.700", "gray.300");
   const bgColor = useColorModeValue("gray.300", "gray.700");
 
@@ -78,10 +79,7 @@ export default function AboutContent() {
                 <Icon as={feature.icon} />
               </Box>
               <VStack align={"start"}>
-                <Text
-                  color={useColorModeValue("blue.500", "blue.300")}
-                  fontWeight={600}
-                >
+                <Text color={titleColor} fontWeight={600}>
                   {feature.title}
                 </Text>
                 <Text color={textColor}>{feature.text}</Text>

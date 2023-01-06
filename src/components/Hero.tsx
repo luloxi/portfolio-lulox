@@ -28,7 +28,7 @@ export default function Hero() {
             fontSize={{ base: "4xl", sm: "5xl", lg: "6xl" }}
           >
             <Text as={"span"} color={"blue.400"}>
-              Hi! I'm {/* Hola, */}
+              Hi! I&apos;m {/* Hola, */}
             </Text>
             <br />
             <Text
@@ -49,9 +49,9 @@ export default function Hero() {
             </Text>
           </Heading>
           <Text color={useColorModeValue("gray.700", "gray.300")}>
-            I love programming, blockchain technology, and cats! I'm currently
-            looking to work in the web3 industry. Let's make a change in the
-            world together!
+            I love programming, blockchain technology, and cats! I&apos;m
+            currently looking to work in the web3 industry. Let&apos;s make a
+            change in the world together!
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
