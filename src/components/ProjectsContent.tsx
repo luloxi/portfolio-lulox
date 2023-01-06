@@ -22,7 +22,7 @@ export default function ProjectsContent() {
       {/* Heading */}
       <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
         <Heading fontSize={"3xl"} mt={4}>
-          Mis proyectos
+          My projects
         </Heading>
       </Stack>
 
@@ -77,12 +77,12 @@ export default function ProjectsContent() {
                 fontSize={"2xl"}
                 fontFamily={"body"}
               >
-                Ethernaut con Hardhat
+                Ethernaut with Hardhat
               </Heading>
               <Text color={"gray.500"}>
-                Resolví una serie de desafíos de seguridad que imitan grandes
-                hackeos en la historia de la blockchain utilizando Hardhat, un
-                framework de desarrollo muy utilizado en la actualidad.
+                Repo solving most Ethernaut security challenges, most inspired
+                in famous security breaches and known failures and
+                vulnerabilities in the Solidity language and EVM ecosystem.
               </Text>
               <Center>
                 <Link
@@ -94,11 +94,11 @@ export default function ProjectsContent() {
                     size={"lg"}
                     fontWeight={"normal"}
                     px={6}
-                    color={useColorModeValue("gray.800", "gray.100")}
-                    bg={useColorModeValue("blue.400", "blue.700")}
-                    _hover={{ bg: useColorModeValue("blue.300", "blue.600") }}
+                    color={useColorModeValue("white", "gray.100")}
+                    bg={useColorModeValue("blue.500", "blue.700")}
+                    _hover={{ bg: useColorModeValue("blue.400", "blue.600") }}
                   >
-                    Ver en GitHub
+                    View on GitHub
                   </Button>
                 </Link>
               </Center>
@@ -146,12 +146,15 @@ export default function ProjectsContent() {
                 fontSize={"2xl"}
                 fontFamily={"body"}
               >
-                Sportsbook - EN DESARROLLO
+                Sportsbook - UNDER CONSTRUCTION
               </Heading>
               <Text color={"gray.500"}>
-                dApp para contactar equipos con una red social, y coordinar un
-                encuentro con la opción de apostar en el resultado. Fue ganador
-                del hackathon de Think & Dev -King of Devs-
+                Social dApp for connecting local teams of a given sport, that
+                allows betting on the outcome of a match, paying for location of
+                a match, and collecting NFTs on the result of past matches.{" "}
+                <strong>
+                  1st place winner of the Think & Dev hackathon "King of Devs"
+                </strong>
               </Text>
               <Center>
                 <Link
@@ -163,11 +166,11 @@ export default function ProjectsContent() {
                     size={"lg"}
                     fontWeight={"normal"}
                     px={6}
-                    color={useColorModeValue("gray.800", "gray.100")}
-                    bg={useColorModeValue("blue.400", "blue.700")}
-                    _hover={{ bg: useColorModeValue("blue.300", "blue.600") }}
+                    color={useColorModeValue("white", "gray.100")}
+                    bg={useColorModeValue("blue.500", "blue.700")}
+                    _hover={{ bg: useColorModeValue("blue.400", "blue.600") }}
                   >
-                    Ver en GitHub
+                    View on GitHub
                   </Button>
                 </Link>
               </Center>

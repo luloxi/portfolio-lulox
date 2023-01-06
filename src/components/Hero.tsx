@@ -27,6 +27,10 @@ export default function Hero() {
             fontWeight={600}
             fontSize={{ base: "4xl", sm: "5xl", lg: "6xl" }}
           >
+            <Text as={"span"} color={"blue.400"}>
+              Hi! I'm {/* Hola, */}
+            </Text>
+            <br />
             <Text
               as={"span"}
               position={"relative"}
@@ -41,48 +45,47 @@ export default function Hero() {
                 zIndex: -1,
               }}
             >
-              Hola,
-            </Text>
-            <br />
-            <Text as={"span"} color={"blue.400"}>
-              soy Luciano
+              Luciano!
             </Text>
           </Heading>
           <Text color={useColorModeValue("gray.700", "gray.300")}>
-            Me apasiona la programación, la tecnología blockchain, y los gatos.
-            Actualmente busco trabajar con tecnologías web3.
-            <br /> Te invito a conocer sobre mis proyectos y otros datos sobre
-            mí.
+            I love programming, blockchain technology, and cats! I'm currently
+            looking to work in the web3 industry. Let's make a change in the
+            world together!
           </Text>
           <Stack
             spacing={{ base: 4, sm: 6 }}
             justifyContent={"center"}
             direction={{ base: "row", sm: "row" }}
           >
-            <Link href="proyectos">
+            <Link href="projects">
               <Button
                 rounded={"full"}
                 size={"lg"}
                 fontWeight={"normal"}
                 px={6}
-                color={useColorModeValue("gray.800", "gray.100")}
-                bg={useColorModeValue("blue.300", "blue.700")}
-                _hover={{ bg: useColorModeValue("blue.200", "blue.600") }}
+                color={"white"}
+                bg={useColorModeValue("blue.400", "blue.700")}
+                transition={"background 0.5s ease"}
+                _hover={{ bg: useColorModeValue("blue.300", "blue.600") }}
+                _active={{ bg: useColorModeValue("blue.500", "blue.400") }}
               >
-                Mis proyectos
+                My projects
               </Button>
             </Link>
-            <Link href="sobre-mi">
+            <Link href="about">
               <Button
                 rounded={"full"}
                 size={"lg"}
                 fontWeight={"normal"}
                 px={6}
-                color={useColorModeValue("gray.800", "gray.100")}
-                bg={useColorModeValue("gray.400", "gray.700")}
-                _hover={{ bg: useColorModeValue("gray.300", "gray.600") }}
+                color={useColorModeValue("white", "gray.100")}
+                bg={useColorModeValue("orange.500", "orange.700")}
+                transition={"background 0.5s ease"}
+                _hover={{ bg: useColorModeValue("orange.400", "orange.600") }}
+                _active={{ bg: useColorModeValue("orange.500", "orange.400") }}
               >
-                Sobre mí
+                About me
               </Button>
             </Link>
           </Stack>

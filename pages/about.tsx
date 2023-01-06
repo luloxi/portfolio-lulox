@@ -13,8 +13,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Sobre mí | Lulox Portfolio</title>
-        <meta name="description" content="Full-stack Web3 developer" />
+        <title>About me | Lulox Portfolio</title>
+        <meta
+          name="description"
+          content="About me, Luciano Oliva Bianco, Full-stack Web3 developer"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -26,12 +29,15 @@ export default function Home() {
         textAlign={"center"}
         mt={6}
       >
-        <Heading fontSize={"3xl"} mt={4}>
-          Soy Luciano Oliva Bianco
+        <Heading
+          color={useColorModeValue("blue.500", "blue.300")}
+          fontSize={"3xl"}
+          mt={4}
+        >
+          I'm Luciano Oliva Bianco
         </Heading>
         <Text color={useColorModeValue("gray.500", "gray.300")} fontSize={"xl"}>
-          Desarrollador web de aplicaciones decentralizadas y contratos
-          inteligentes.
+          Fullstack web developer, blockchain & web3 oriented
         </Text>
       </Stack>
       <AboutContent />

@@ -8,7 +8,9 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-export default function Hero() {
+export default function AboutCats() {
+  const bgColor = useColorModeValue("gray.300", "gray.700");
+
   return (
     <Container maxW={"container.lg"}>
       <Stack
@@ -19,11 +21,17 @@ export default function Hero() {
         direction={{ base: "column", md: "row" }}
       >
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
-          <Text color={useColorModeValue("gray.700", "gray.300")}>
-            Curiosidades sobre mi... ¡me encantan los gatos! Disfruto de hacer
-            yoga, prefiero los ventiladores a los aires acondicionados, a veces
-            juego al ajedrez, y me encanta el café de especialidad. Uso Linux de
-            forma nativa, y sé más de cripto que de actualidad.
+          <Text
+            color={useColorModeValue("gray.700", "gray.300")}
+            _hover={{ bg: bgColor }}
+            transition={"background 0.9s ease"}
+            p={4}
+            borderRadius={24}
+          >
+            And... I love cats! I enjoy practicing yoga, I prefer fans over air
+            conditioners, sometimes I play chess, and I love a good coffee.
+            Native Linux user, and I'm more informed on crypto than on world
+            news.
           </Text>
           <Image
             alt={"Hero Image"}

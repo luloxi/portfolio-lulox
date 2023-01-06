@@ -6,8 +6,11 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Proyectos | Lulox Portfolio</title>
-        <meta name="description" content="Full-stack Web3 developer" />
+        <title>Projects | Lulox Portfolio</title>
+        <meta
+          name="description"
+          content="Projects on my portfolio. Developed with Hardhat and Next.js"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

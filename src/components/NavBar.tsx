@@ -29,8 +29,9 @@ const SocialButton = ({
 }) => {
   return (
     <chakra.button
-      bg={useColorModeValue("blue.300", "blue.700")}
+      bg={useColorModeValue("blue.400", "blue.800")}
       rounded={"full"}
+      color={useColorModeValue("gray.200", "gray.200")}
       w={8}
       h={8}
       cursor={"pointer"}
@@ -42,7 +43,7 @@ const SocialButton = ({
       justifyContent={"center"}
       transition={"background 0.3s ease"}
       _hover={{
-        bg: useColorModeValue("blue.200", "blue.800"),
+        bg: useColorModeValue("blue.600", "blue.600"),
       }}
     >
       <VisuallyHidden>{label}</VisuallyHidden>
@@ -52,25 +53,26 @@ const SocialButton = ({
 };
 
 const Links = [
-  { name: "Inicio", href: "/" },
-  { name: "Proyectos", href: "proyectos" },
-  { name: "Sobre mí", href: "sobre-mi" },
-  { name: "Contacto", href: "contacto" },
+  { name: "Home", href: "/" },
+  { name: "Projects", href: "projects" },
+  { name: "About me", href: "about" },
+  { name: "Contact", href: "contact" },
 ];
 
 const NavLink = ({ children, href }: { children: ReactNode; href: string }) => (
   <Link href={`${href}`}>
     <Box
-      px={4}
-      py={2}
+      px={5}
+      py={5}
       rounded={"md"}
-      bg={useColorModeValue("blue.300", "blue.700")}
+      // bg={useColorModeValue("blue.300", "blue.700")}
       textAlign={"center"}
-      color={useColorModeValue("gray.800", "gray.200")}
+      color={useColorModeValue("gray.200", "gray.200")}
       fontWeight={"600"}
+      transition={"background 0.3s ease"}
       _hover={{
         textDecoration: "none",
-        bg: useColorModeValue("blue.100", "blue.500"),
+        bg: useColorModeValue("blue.600", "blue.600"),
       }}
     >
       {children}
@@ -101,7 +103,7 @@ export default function NavBar() {
                 </>
               )
             }
-            aria-label={"Abrir menú"}
+            aria-label={"Open menú"}
             display={{ md: "none" }}
             onClick={isOpen ? onClose : onOpen}
           />

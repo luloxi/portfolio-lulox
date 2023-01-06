@@ -5,8 +5,8 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contacto | Lulox Portfolio</title>
-        <meta name="description" content="Full-stack Web3 developer" />
+        <title>Contact | Lulox Portfolio</title>
+        <meta name="description" content="Contact form & other info" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -8,38 +8,50 @@ import {
   VStack,
   useColorModeValue,
 } from "@chakra-ui/react";
-import { CheckIcon } from "@chakra-ui/icons";
+import { CheckIcon, AddIcon } from "@chakra-ui/icons";
 
 const features = [
   {
     id: 1,
-    title: "Innovador",
-    text: "Siempre busco ser parte de la vanguardia tecnológica, y encuentro eso en la tecnología blockchain.",
+    title: "Innovator",
+    text: "I'm always looking for the latest technology advances and trends.",
+    icon: AddIcon,
+    iconColor: "yellow.400",
   },
   {
     id: 2,
-    title: "Auto-didacta",
-    text: "Tengo facilidad para aprender por mis medios, y constantemente estoy investigando nuevas tecnologías.",
+    title: "Self-learner",
+    text: "I can learn with ease by myself, and I'm constantly researching on new technologies.",
+    icon: AddIcon,
+    iconColor: "yellow.400",
   },
   {
     id: 3,
     title: "Flexible",
-    text: "Disfruto de enseñar y colaborar con mis colegas, y tambien de resolver tareas complejas a solas.",
+    text: "I enjoy teaching and collaborating with my peers, and also solving complex tasks on my own",
+    icon: AddIcon,
+    iconColor: "yellow.400",
   },
   {
     id: 4,
-    title: "Desarrollo web",
-    text: "Utilizo React y Next.js, junto a las últimas herramientas del mercado como TailwindCSS y ChakraUI.",
+    title: "Web development",
+    text: "I'm currently focused on using React and Next.js, along with ChakraUI and TailwindCSS",
+    icon: CheckIcon,
+    iconColor: "green.400",
   },
   {
     id: 5,
     title: "Smart contracts",
-    text: "Con Solidity y Hardhat puedo desarrollar contratos inteligentes para la mayoría de las blockchains.",
+    text: "I can develop smart contracts for most blockchains with Solidity and Hardhat.",
+    icon: CheckIcon,
+    iconColor: "green.400",
   },
   {
     id: 6,
     title: "JavaScript",
-    text: "Mi lenguaje principal, tanto para frontend como para backend, aunque estoy abierto a utilizar otros lenguajes.",
+    text: "My main language for frontend and backend development. But I'm willing to learn new ones!",
+    icon: CheckIcon,
+    iconColor: "green.400",
   },
 ];
 
@@ -60,12 +72,18 @@ export default function AboutContent() {
               borderRadius={24}
               p={3}
               _hover={{ bg: bgColor }}
+              transition={"background 0.9s ease"}
             >
-              <Box color={"green.400"} px={2}>
-                <Icon as={CheckIcon} />
+              <Box color={feature.iconColor} px={2}>
+                <Icon as={feature.icon} />
               </Box>
               <VStack align={"start"}>
-                <Text fontWeight={600}>{feature.title}</Text>
+                <Text
+                  color={useColorModeValue("blue.500", "blue.300")}
+                  fontWeight={600}
+                >
+                  {feature.title}
+                </Text>
                 <Text color={textColor}>{feature.text}</Text>
               </VStack>
             </HStack>

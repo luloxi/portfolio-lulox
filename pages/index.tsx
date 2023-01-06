@@ -8,7 +8,10 @@ export default function Home() {
     <>
       <Head>
         <title>Lulox Portfolio</title>
-        <meta name="description" content="Full-stack Web3 developer" />
+        <meta
+          name="description"
+          content="Hi, I'm Luciano, and this is my personal site. I'm a Full-stack Web3 developer"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

@@ -55,7 +55,7 @@ export default function ContactForm() {
   const SocialButton = ({ children, label, href }) => {
     return (
       <chakra.button
-        bg={"blue.700"}
+        bg={"blue.600"}
         rounded={"full"}
         w={8}
         h={8}
@@ -67,7 +67,7 @@ export default function ContactForm() {
         alignItems={"center"}
         justifyContent={"center"}
         transition={"background 0.3s ease"}
-        _hover={"blue.800"}
+        _hover={{ bg: "blue.400" }}
       >
         <VisuallyHidden>{label}</VisuallyHidden>
         {children}
@@ -87,15 +87,16 @@ export default function ContactForm() {
           >
             <Box p={4}>
               <Wrap spacing={{ base: 20, sm: 3, md: 5, lg: 20 }}>
-                {/* Izquierda con info de contacto */}
+                {/* Left side of contact card */}
                 <WrapItem>
                   <Box>
-                    <Heading>Contacto</Heading>
+                    <Heading>Contact</Heading>
                     <Text mt={{ sm: 3, md: 3, lg: 5 }} color="gray.400">
-                      Por dudas o propuestas, enviame
-                      <br /> un mensaje
+                      For any work or collab related inquiries,
+                      <br />
+                      please send me a message!
                     </Text>
-                    {/* Lateral izquierdo con iconos e info */}
+                    {/* Left side icons with text */}
                     <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                       <VStack pl={0} spacing={3} alignItems="flex-start">
                         <Link href="mailto:lucianoolivabianco@gmail.com">
@@ -164,7 +165,7 @@ export default function ContactForm() {
                   </Box>
                 </WrapItem>
 
-                {/* Derecha con Formulario de contacto*/}
+                {/* Right side with contact form*/}
                 <WrapItem>
                   {mailSent ? (
                     <>
@@ -175,7 +176,7 @@ export default function ContactForm() {
                       >
                         <Box m={8} color="#0B0E3F">
                           <Text>
-                            ¡Tu mensaje fue enviado exitosamente!
+                            Your message was successfully sent!
                             <br />
                           </Text>
                         </Box>
@@ -189,7 +190,7 @@ export default function ContactForm() {
                             <VStack spacing={5}>
                               {/* NAME input */}
                               <FormControl id="user_name">
-                                <FormLabel>Nombre</FormLabel>
+                                <FormLabel>Name</FormLabel>
                                 <InputGroup borderColor="#E0E1E7">
                                   <InputLeftElement pointerEvents="none">
                                     <BsPerson color="gray.800" />
@@ -198,6 +199,10 @@ export default function ContactForm() {
                                     type="text"
                                     size="md"
                                     name="user_name"
+                                    _hover={{
+                                      borderColor: "blue.300",
+                                    }}
+                                    placeholder="John Cena"
                                   />
                                 </InputGroup>
                               </FormControl>
@@ -212,18 +217,22 @@ export default function ContactForm() {
                                     type="text"
                                     size="md"
                                     name="user_email"
+                                    _hover={{
+                                      borderColor: "blue.300",
+                                    }}
+                                    placeholder="john.cena@ethereum.com"
                                   />
                                 </InputGroup>
                               </FormControl>
                               {/* MESSAGE input */}
                               <FormControl id="message" isRequired>
-                                <FormLabel>Mensaje</FormLabel>
+                                <FormLabel>Message</FormLabel>
                                 <Textarea
                                   borderColor="gray.300"
                                   _hover={{
-                                    borderRadius: "gray.300",
+                                    borderColor: "blue.300",
                                   }}
-                                  placeholder="Escribi acá tu mensaje"
+                                  placeholder="Write here your message..."
                                   name="message"
                                 />
                               </FormControl>
@@ -239,7 +248,7 @@ export default function ContactForm() {
                                   // value="Send"
                                   // onClick={sendEmail}
                                 >
-                                  Enviar
+                                  Send
                                 </Button>
                               </FormControl>
                             </VStack>
