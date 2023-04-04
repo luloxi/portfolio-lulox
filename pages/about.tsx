@@ -37,7 +37,7 @@ export default function Home() {
           I&apos;m Luciano Oliva Bianco
         </Heading>
         <Text color={useColorModeValue("gray.500", "gray.300")} fontSize={"xl"}>
-          Fullstack web developer, blockchain & web3 oriented
+          Hey there, I'm a Full-stack Web3 developer!
         </Text>
       </Stack>
       <AboutContent />
