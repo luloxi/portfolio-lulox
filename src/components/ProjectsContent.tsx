@@ -232,8 +232,8 @@ export default function ProjectsContent() {
                 Ethernaut with Hardhat
               </Heading>
               <Text color={"gray.500"}>
-                Repo solving most Ethernaut security challenges, most inspired
-                in famous security breaches and known failures and
+                Repo solving most Ethernaut security challenges, many of them
+                inspired by famous security breaches, known failures and
                 vulnerabilities in the Solidity language and EVM ecosystem.
               </Text>
               <Center>
