@@ -40,8 +40,9 @@ export default function ProjectsContent() {
         <GridItem colSpan={colSpan}>
           <Box
             maxW={"445px"}
-            _hover={{ bg: useColorModeValue("gray.100", "gray.800") }}
-            bg={useColorModeValue("white", "gray.900")}
+            _hover={{ bg: useColorModeValue("yellow.100", "yellow.900") }}
+            transition={"background 0.9s ease"}
+            bg={useColorModeValue("blue.100", "blue.900")}
             boxShadow={"2xl"}
             m={4}
             rounded={"md"}
@@ -75,7 +76,7 @@ export default function ProjectsContent() {
               >
                 Tuse
               </Heading>
-              <Text color={"gray.500"}>
+              <Text color={useColorModeValue("gray.700", "white")}>
                 Descentralized mutual fund dApp, governed by a DAO, one vote per
                 NFT, which changes dynamnically depending if that NFT has funds
                 associated with it or not, and a Vault.
@@ -119,8 +120,9 @@ export default function ProjectsContent() {
         <GridItem colSpan={colSpan}>
           <Box
             maxW={"445px"}
-            bg={useColorModeValue("white", "gray.900")}
-            _hover={{ bg: useColorModeValue("gray.100", "gray.800") }}
+            _hover={{ bg: useColorModeValue("yellow.100", "yellow.900") }}
+            transition={"background 0.9s ease"}
+            bg={useColorModeValue("blue.100", "blue.900")}
             boxShadow={"2xl"}
             m={4}
             rounded={"md"}
@@ -158,7 +160,7 @@ export default function ProjectsContent() {
               >
                 Sportsbook
               </Heading>
-              <Text color={"gray.500"}>
+              <Text color={useColorModeValue("gray.700", "white")}>
                 Social dApp for connecting local teams of a given sport, that
                 allows betting on the outcome of a match, paying for location of
                 a match, and collecting NFTs on the result of past matches.
@@ -192,8 +194,9 @@ export default function ProjectsContent() {
         <GridItem colSpan={colSpan}>
           <Box
             maxW={"445px"}
-            _hover={{ bg: useColorModeValue("gray.100", "gray.800") }}
-            bg={useColorModeValue("white", "gray.900")}
+            _hover={{ bg: useColorModeValue("yellow.100", "yellow.900") }}
+            transition={"background 0.9s ease"}
+            bg={useColorModeValue("blue.100", "blue.900")}
             boxShadow={"2xl"}
             m={4}
             rounded={"md"}
@@ -231,7 +234,7 @@ export default function ProjectsContent() {
               >
                 Ethernaut with Hardhat
               </Heading>
-              <Text color={"gray.500"}>
+              <Text color={useColorModeValue("gray.700", "white")}>
                 Repo solving most Ethernaut security challenges, many of them
                 inspired by famous security breaches, known failures and
                 vulnerabilities in the Solidity language and EVM ecosystem.

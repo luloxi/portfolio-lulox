@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 
 export default function AboutCats() {
-  const bgColor = useColorModeValue("gray.300", "gray.700");
+  const bgColor = useColorModeValue("blue.200", "blue.800");
 
   return (
     <Container maxW={"container.lg"}>

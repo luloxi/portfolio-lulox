@@ -16,21 +16,21 @@ const features = [
     title: "Innovator",
     text: "I'm always looking for the latest technology advances and trends.",
     icon: AddIcon,
-    iconColor: "yellow.400",
+    iconColor: "red.400",
   },
   {
     id: 2,
     title: "Self-learner",
     text: "I can learn with ease by myself, and I'm constantly researching on new technologies.",
     icon: AddIcon,
-    iconColor: "yellow.400",
+    iconColor: "red.400",
   },
   {
     id: 3,
     title: "Flexible",
     text: "I enjoy teaching and collaborating with my peers, and also solving complex tasks on my own",
     icon: AddIcon,
-    iconColor: "yellow.400",
+    iconColor: "red.400",
   },
   {
     id: 4,
@@ -58,7 +58,7 @@ const features = [
 export default function AboutContent() {
   const titleColor = useColorModeValue("blue.500", "blue.300");
   const textColor = useColorModeValue("gray.700", "gray.300");
-  const bgColor = useColorModeValue("gray.300", "gray.700");
+  const bgColor = useColorModeValue("yellow.300", "yellow.700");
 
   return (
     <Box p={4}>
