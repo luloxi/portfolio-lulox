@@ -9,6 +9,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { CheckIcon, AddIcon } from "@chakra-ui/icons";
+import { BsCursor } from "react-icons/bs";
 
 const features = [
   {
@@ -58,13 +59,17 @@ const features = [
 export default function AboutContent() {
   const titleColor = useColorModeValue("blue.500", "blue.300");
   const textColor = useColorModeValue("gray.700", "gray.300");
-  const bgColor = useColorModeValue("yellow.300", "yellow.700");
+  const bgColor = useColorModeValue("yellow.300", "blue.900");
 
   return (
     <Box p={4}>
       {/* Sections */}
       <Container maxW={"container.lg"}>
-        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing={10}>
+        <SimpleGrid
+          columns={{ base: 1, md: 2, lg: 3 }}
+          spacing={10}
+          _hover={{ cursor: "pointer" }}
+        >
           {features.map((feature) => (
             <HStack
               key={feature.id}

@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 
 export default function AboutCats() {
-  const bgColor = useColorModeValue("blue.200", "blue.800");
+  const bgColor = useColorModeValue("blue.200", "blue.900");
 
   return (
     <Container maxW={"container.lg"}>
@@ -23,7 +23,7 @@ export default function AboutCats() {
         <Stack flex={1} spacing={{ base: 5, md: 10 }}>
           <Text
             color={useColorModeValue("gray.700", "gray.300")}
-            _hover={{ bg: bgColor }}
+            _hover={{ bg: bgColor, cursor: "pointer" }}
             transition={"background 0.9s ease"}
             p={4}
             borderRadius={24}

@@ -40,7 +40,7 @@ export default function ProjectsContent() {
         <GridItem colSpan={colSpan}>
           <Box
             maxW={"445px"}
-            _hover={{ bg: useColorModeValue("yellow.100", "yellow.900") }}
+            _hover={{ bg: useColorModeValue("yellow.100", "red.900") }}
             transition={"background 0.9s ease"}
             bg={useColorModeValue("blue.100", "blue.900")}
             boxShadow={"2xl"}
@@ -120,7 +120,7 @@ export default function ProjectsContent() {
         <GridItem colSpan={colSpan}>
           <Box
             maxW={"445px"}
-            _hover={{ bg: useColorModeValue("yellow.100", "yellow.900") }}
+            _hover={{ bg: useColorModeValue("yellow.100", "red.900") }}
             transition={"background 0.9s ease"}
             bg={useColorModeValue("blue.100", "blue.900")}
             boxShadow={"2xl"}
@@ -194,7 +194,7 @@ export default function ProjectsContent() {
         <GridItem colSpan={colSpan}>
           <Box
             maxW={"445px"}
-            _hover={{ bg: useColorModeValue("yellow.100", "yellow.900") }}
+            _hover={{ bg: useColorModeValue("yellow.100", "red.900") }}
             transition={"background 0.9s ease"}
             bg={useColorModeValue("blue.100", "blue.900")}
             boxShadow={"2xl"}
