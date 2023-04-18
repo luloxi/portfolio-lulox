@@ -1,7 +1,9 @@
 import Head from "next/head";
-import ContactForm from "../src/components/ContactForm.jsx";
 import Hero from "../src/components/Hero";
 import { ColorModeScript } from "@chakra-ui/react";
+import AboutContent from "../src/components/AboutContent";
+import AboutCats from "../src/components/AboutCats";
+import { Container, Stack, Heading, useColorModeValue } from "@chakra-ui/react";
 
 export default function Home() {
   return (
@@ -19,7 +21,25 @@ export default function Home() {
 
       <Hero />
 
-      <ContactForm />
+      <Stack
+        spacing={4}
+        as={Container}
+        maxW={"3xl"}
+        textAlign={"center"}
+        mt={6}
+      >
+        <Heading
+          color={useColorModeValue("blue.500", "blue.300")}
+          fontSize={"3xl"}
+          mt={4}
+        >
+          About me
+        </Heading>
+      </Stack>
+      <AboutContent />
+      <AboutCats />
+
+      {/* <ContactForm /> */}
     </>
   );
 }

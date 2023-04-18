@@ -55,7 +55,7 @@ const SocialButton = ({
 const Links = [
   { name: "Home", href: "/" },
   { name: "Projects", href: "projects" },
-  { name: "About me", href: "about" },
+  // { name: "About me", href: "about" },
   { name: "Contact", href: "contact" },
 ];
 

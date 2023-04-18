@@ -9,48 +9,47 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import { CheckIcon, AddIcon } from "@chakra-ui/icons";
-import { BsCursor } from "react-icons/bs";
 
 const features = [
   {
     id: 1,
     title: "Innovator",
-    text: "I'm always looking for the latest technology advances and trends.",
+    text: "Always looking for the latest technology advances and trends.",
     icon: AddIcon,
     iconColor: "red.400",
   },
   {
     id: 2,
     title: "Self-learner",
-    text: "I can learn with ease by myself, and I'm constantly researching on new technologies.",
+    text: "Can learn with ease by myself, and I'm constantly researching on new technologies.",
     icon: AddIcon,
     iconColor: "red.400",
   },
   {
     id: 3,
     title: "Flexible",
-    text: "I enjoy teaching and collaborating with my peers, and also solving complex tasks on my own",
+    text: "Teaching and collaborating with my peers is fun, but I also like solving complex tasks on my own",
     icon: AddIcon,
     iconColor: "red.400",
   },
   {
     id: 4,
     title: "Web development",
-    text: "I'm currently focused on using React and Next.js, along with ChakraUI and TailwindCSS",
+    text: "Interactive with React, optimized with Next.js, responsiveness by ChakraUI and TailwindCSS",
     icon: CheckIcon,
     iconColor: "green.400",
   },
   {
     id: 5,
     title: "Smart contracts",
-    text: "I can develop smart contracts for most blockchains with Solidity and Hardhat.",
+    text: "Developing smart contracts with Solidity, Hardhat and Foundry for EVM compatible chains",
     icon: CheckIcon,
     iconColor: "green.400",
   },
   {
     id: 6,
     title: "JavaScript",
-    text: "My main language for frontend and backend development. But I'm willing to learn new ones!",
+    text: "My main language for frontend and backend, but I'm willing to learn other languages",
     icon: CheckIcon,
     iconColor: "green.400",
   },

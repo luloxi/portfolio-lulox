@@ -64,28 +64,28 @@ export default function Hero() {
                 size={"lg"}
                 fontWeight={"normal"}
                 px={6}
-                color={"white"}
-                bg={useColorModeValue("blue.400", "blue.700")}
-                transition={"background 0.5s ease"}
-                _hover={{ bg: useColorModeValue("blue.300", "blue.600") }}
-                _active={{ bg: useColorModeValue("blue.500", "blue.400") }}
-              >
-                My projects
-              </Button>
-            </Link>
-            <Link href="about">
-              <Button
-                rounded={"full"}
-                size={"lg"}
-                fontWeight={"normal"}
-                px={6}
                 color={useColorModeValue("white", "gray.100")}
                 bg={useColorModeValue("orange.500", "orange.700")}
                 transition={"background 0.5s ease"}
                 _hover={{ bg: useColorModeValue("orange.400", "orange.600") }}
                 _active={{ bg: useColorModeValue("orange.500", "orange.400") }}
               >
-                About me
+                View my projects
+              </Button>
+            </Link>
+            <Link href="contact">
+              <Button
+                rounded={"full"}
+                size={"lg"}
+                fontWeight={"normal"}
+                px={6}
+                color={"white"}
+                bg={useColorModeValue("blue.400", "blue.700")}
+                transition={"background 0.5s ease"}
+                _hover={{ bg: useColorModeValue("blue.300", "blue.600") }}
+                _active={{ bg: useColorModeValue("blue.500", "blue.400") }}
+              >
+                Contact me!
               </Button>
             </Link>
           </Stack>

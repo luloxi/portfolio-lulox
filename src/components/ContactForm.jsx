@@ -99,7 +99,7 @@ export default function ContactForm() {
                     {/* Left side icons with text */}
                     <Box py={{ base: 5, sm: 5, md: 8, lg: 10 }}>
                       <VStack pl={0} spacing={3} alignItems="flex-start">
-                        <Link href="mailto:lucianoolivabianco@gmail.com">
+                        <Link href="mailto:lulox.eth@protonmail.com">
                           <Button
                             size="md"
                             height="48px"
@@ -109,7 +109,7 @@ export default function ContactForm() {
                             _hover={{ border: "2px solid #1C6FEB" }}
                             leftIcon={<MdEmail color="#1970F1" size="20px" />}
                           >
-                            lucianoolivabianco@gmail.com
+                            lulox.eth@protonmail.com
                           </Button>
                         </Link>
                         <Link href="tel:+5491162959490">
