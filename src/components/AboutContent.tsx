@@ -28,7 +28,7 @@ const features = [
   {
     id: 3,
     title: "Flexible",
-    text: "Teaching and collaborating with my peers is fun, but I also like solving complex tasks on my own",
+    text: "I enjoy teaching and collaborating with my peers, but I also like solving complex tasks on my own",
     icon: AddIcon,
     iconColor: "red.400",
   },
