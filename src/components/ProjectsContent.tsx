@@ -57,7 +57,7 @@ export default function ProjectsContent() {
               mb={6}
               pos={"relative"}
             >
-              <Image alt="Tuse" src={"/projects/tuse.jpg"} layout={"fill"} />
+              <Image alt="Tuse" src={"/projects/tuse.png"} layout={"fill"} />
             </Box>
             <Stack>
               <Text
@@ -242,6 +242,76 @@ export default function ProjectsContent() {
               <Center>
                 <Link
                   href="https://github.com/luloxi/ethernaut-with-hardhat"
+                  target={"_blank"}
+                >
+                  <Button
+                    rounded={"full"}
+                    size={"lg"}
+                    fontWeight={"normal"}
+                    px={6}
+                    color={useColorModeValue("white", "gray.100")}
+                    bg={useColorModeValue("blue.500", "blue.700")}
+                    _hover={{ bg: useColorModeValue("blue.400", "blue.600") }}
+                  >
+                    View on GitHub
+                  </Button>
+                </Link>
+              </Center>
+            </Stack>
+          </Box>
+        </GridItem>
+
+        {/* Fourth card */}
+        <GridItem colSpan={colSpan}>
+          <Box
+            maxW={"445px"}
+            _hover={{ bg: useColorModeValue("yellow.100", "red.900") }}
+            transition={"background 0.9s ease"}
+            bg={useColorModeValue("blue.100", "blue.900")}
+            boxShadow={"2xl"}
+            m={4}
+            rounded={"md"}
+            p={6}
+            overflow={"hidden"}
+          >
+            <Box
+              h={"230px"}
+              bg={"gray.100"}
+              mt={-6}
+              mx={-6}
+              mb={6}
+              pos={"relative"}
+            >
+              <Image
+                alt="Ethernaut with Hardhat"
+                src={"/projects/foxymask.png"}
+                layout={"fill"}
+              />
+            </Box>
+            <Stack>
+              <Text
+                color={"green.500"}
+                textTransform={"uppercase"}
+                fontWeight={800}
+                fontSize={"sm"}
+                letterSpacing={1.1}
+              >
+                Full stack
+              </Text>
+              <Heading
+                color={useColorModeValue("gray.700", "white")}
+                fontSize={"2xl"}
+                fontFamily={"body"}
+              >
+                FoxyMask (ECDSA node)
+              </Heading>
+              <Text color={useColorModeValue("gray.700", "white")}>
+                Project implementing ECDSA on a client and a server to transact
+                value between different addresses with ease and security.
+              </Text>
+              <Center>
+                <Link
+                  href="https://github.com/luloxi/ECDSA-node"
                   target={"_blank"}
                 >
                   <Button
