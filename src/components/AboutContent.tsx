@@ -28,7 +28,7 @@ const features = [
   {
     id: 3,
     title: "Flexible",
-    text: "I enjoy teaching and collaborating with my peers, but I also like solving complex tasks on my own",
+    text: "I enjoy teaching and collaborating with my peers, and I also like solving complex tasks on my own",
     icon: AddIcon,
     iconColor: "red.400",
   },
@@ -49,7 +49,7 @@ const features = [
   {
     id: 6,
     title: "JavaScript",
-    text: "My main language for frontend and backend, but I'm willing to learn other languages",
+    text: "My main language for frontend and backend, but I'm willing to learn new ones",
     icon: CheckIcon,
     iconColor: "green.400",
   },
