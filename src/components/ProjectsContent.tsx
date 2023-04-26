@@ -57,7 +57,11 @@ export default function ProjectsContent() {
               mb={6}
               pos={"relative"}
             >
-              <Image alt="Tuse" src={"/projects/tuse.png"} layout={"fill"} />
+              <Image
+                alt="Tuse"
+                src={"/projects/evolution-DAO.png"}
+                layout={"fill"}
+              />
             </Box>
             <Stack>
               <Text
@@ -74,15 +78,14 @@ export default function ProjectsContent() {
                 fontSize={"2xl"}
                 fontFamily={"body"}
               >
-                Tuse
+                evolution-DAO
               </Heading>
               <Text color={useColorModeValue("gray.700", "white")}>
-                Descentralized mutual fund dApp, governed by a DAO, one vote per
-                NFT, which changes dynamnically depending if that NFT has funds
-                associated with it or not, and a Vault.
+                DAO development learning project that makes different DAOs with
+                increasing difficulty level.
               </Text>
               <Center>
-                <Link href="https://tuse.vercel.app/" target={"_blank"}>
+                {/* <Link href="https://tuse.vercel.app/" target={"_blank"}>
                   <Button
                     rounded={"full"}
                     size={"lg"}
@@ -94,9 +97,9 @@ export default function ProjectsContent() {
                   >
                     Web
                   </Button>
-                </Link>
+                </Link> */}
                 <Link
-                  href="https://github.com/manuel-salvador/hackathon-tuse"
+                  href="https://buidlguidl.com/build/0XiixjBqbKqluguYpmFE"
                   target={"_blank"}
                 >
                   <Button
@@ -109,7 +112,7 @@ export default function ProjectsContent() {
                     bg={useColorModeValue("blue.500", "blue.700")}
                     _hover={{ bg: useColorModeValue("blue.400", "blue.600") }}
                   >
-                    View on GitHub
+                    View on BuidlGuidl
                   </Button>
                 </Link>
               </Center>
@@ -161,9 +164,8 @@ export default function ProjectsContent() {
                 Sportsbook
               </Heading>
               <Text color={useColorModeValue("gray.700", "white")}>
-                Social dApp for connecting local teams of a given sport, that
-                allows betting on the outcome of a match, paying for location of
-                a match, and collecting NFTs on the result of past matches.
+                DeFi dApp for betting between teams on a sports match, that
+                mints an NFT with the result to each team.
                 <strong>
                   1st place winner of the Think & Dev hackathon &quot;King of
                   Devs&quot;
@@ -171,7 +173,7 @@ export default function ProjectsContent() {
               </Text>
               <Center>
                 <Link
-                  href="https://github.com/luloxi/sportsbook-dapp"
+                  href="https://buidlguidl.com/build/TeO63e0zuipeKI1alGUc"
                   target={"_blank"}
                 >
                   <Button
@@ -183,7 +185,7 @@ export default function ProjectsContent() {
                     bg={useColorModeValue("blue.500", "blue.700")}
                     _hover={{ bg: useColorModeValue("blue.400", "blue.600") }}
                   >
-                    View on GitHub
+                    View on BuidlGuidl
                   </Button>
                 </Link>
               </Center>
